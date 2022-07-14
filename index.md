@@ -1,31 +1,15 @@
 <header class="header header--fixed" role="banner">
 <nav class="distill-site-nav distill-site-header">
 <div class="nav-left">
-<a class="logo" href="https://emitanaka.org/">
+<a class="logo" href="https://andrewmrose.github.io/">
 <img src="images/avatar.png" alt="Logo"/>
 </a>
 <a href="index.html" class="title">emi tanaka</a>
 <a href="cv.html">CV</a>
 <a href="projects.html">Projects</a>
 <a href="teaching.html">Teaching</a>
-<a href="talks.html">Talks</a>
-<a href="blog.html">Blog</a>
 <a href="resources.html">Resources</a>
-<a href="contact.html">Contact</a>
-<a href="about.html">About</a>
 <input id="distill-search" class="nav-search hidden" type="text" placeholder="Search..."/>
-</div>
-<div class="nav-right">
-<a href="https://github.com/emitanaka">
-<i class="fab fa-github" aria-hidden="true"></i>
-</a>
-<a href="https://twitter.com/statsgen">
-<i class="fab fa-twitter" aria-hidden="true"></i>
-</a>
-<a href="blog.xml">
-<i class="fa fa-rss" aria-hidden="true"></i>
-</a>
-<a href="javascript:void(0);" class="nav-toggle">&#9776;</a>
 </div>
 </nav>
 </header>
