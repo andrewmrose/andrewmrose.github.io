@@ -1,3 +1,9 @@
+<div class="tab">
+  <button class="tablinks" onclick="openCity(event, 'London')">London</button>
+  <button class="tablinks" onclick="openCity(event, 'Paris')">Paris</button>
+  <button class="tablinks" onclick="openCity(event, 'Tokyo')">Tokyo</button>
+</div>
+
 ## Andrew M Rose
 
 You can use the [editor on GitHub](https://github.com/andrewmrose/andrewmrose.github.io/edit/main/index.md) to maintain and preview the content for your website in Markdown files.
