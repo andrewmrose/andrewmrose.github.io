@@ -4,7 +4,7 @@ You can use the [editor on GitHub](https://github.com/andrewmrose/andrewmrose.gi
 
 Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
-<a href="CV.md">Andrew's CV<a>
+<a href="https://andrewmrose.github.io/CV">Andrew's CV<a>
 
 ### Markdown 1
 
