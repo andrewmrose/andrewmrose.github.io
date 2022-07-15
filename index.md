@@ -3,8 +3,8 @@
 <div class="nav-left">
 <a href="index.html" class="title">Home</a>
 <a href="CV">CV</a>
-<a href="projects.html">Projects</a>
 <a href="teaching.html">Teaching</a>
+<a href="projects.html">Projects</a>
 <a href="resources.html">Resources</a>
 </div>
 </nav>
@@ -16,8 +16,6 @@
 You can use the [editor on GitHub](https://github.com/andrewmrose/andrewmrose.github.io/edit/main/index.md) to maintain and preview the content for your website in Markdown files.
 
 Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-
-<a href="https://andrewmrose.github.io/CV">Andrew's CV<a>
 
 ### Markdown 1
 
