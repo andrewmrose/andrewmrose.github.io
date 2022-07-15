@@ -10,14 +10,6 @@ d-title {
 }
 </style>
 
-```{r setup, include = FALSE}
-library(tidyverse)
-knitr::opts_chunk$set(echo = FALSE,
-                      message = FALSE,
-                      warning = FALSE)
-```
-
-
 <br>
 
 # Teaching
