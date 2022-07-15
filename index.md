@@ -1,10 +1,7 @@
 <header class="header header--fixed" role="banner">
 <nav class="distill-site-nav distill-site-header">
 <div class="nav-left">
-<a class="logo" href="https://andrewmrose.github.io/">
-<img src="images/avatar.png" alt="Logo"/>
-</a>
-<a href="index.html" class="title">emi tanaka</a>
+<a href="index.html" class="title">Home</a>
 <a href="cv.html">CV</a>
 <a href="projects.html">Projects</a>
 <a href="teaching.html">Teaching</a>
