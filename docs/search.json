@@ -6,7 +6,7 @@
       "description": "Some additional details about the website",
       "author": [],
       "contents": "\n\n\n\n",
-      "last_modified": "2022-07-15T18:27:47-03:00"
+      "last_modified": "2022-07-15T18:35:21-03:00"
     },
     {
       "path": "index.html",
@@ -14,7 +14,7 @@
       "description": "Welcome to the website. I hope you enjoy it!\n",
       "author": [],
       "contents": "\nThis is my professional/personal projects website.\n\n\n\n",
-      "last_modified": "2022-07-15T18:27:47-03:00"
+      "last_modified": "2022-07-15T18:35:21-03:00"
     },
     {
       "path": "teaching.html",
@@ -22,7 +22,7 @@
       "author": [],
       "date": "2022-07-15",
       "contents": "\ntesting\n\n\n\n",
-      "last_modified": "2022-07-15T18:27:48-03:00"
+      "last_modified": "2022-07-15T18:35:22-03:00"
     }
   ],
   "collections": []
