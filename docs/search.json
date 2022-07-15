@@ -6,15 +6,23 @@
       "description": "Some additional details about the website",
       "author": [],
       "contents": "\n\n\n\n",
-      "last_modified": "2022-07-15T18:17:36-03:00"
+      "last_modified": "2022-07-15T18:27:47-03:00"
     },
     {
       "path": "index.html",
       "title": "My Website",
       "description": "Welcome to the website. I hope you enjoy it!\n",
       "author": [],
-      "contents": "\n\n\n\n",
-      "last_modified": "2022-07-15T18:17:36-03:00"
+      "contents": "\nThis is my professional/personal projects website.\n\n\n\n",
+      "last_modified": "2022-07-15T18:27:47-03:00"
+    },
+    {
+      "path": "teaching.html",
+      "title": "Teaching History",
+      "author": [],
+      "date": "2022-07-15",
+      "contents": "\ntesting\n\n\n\n",
+      "last_modified": "2022-07-15T18:27:48-03:00"
     }
   ],
   "collections": []
