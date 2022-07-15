@@ -1,5 +1,5 @@
 ---
-title: "My Website"
+title: "Andrew M Rose"
 description: |
   Welcome to the website. I hope you enjoy it!
 image: "images/me.png"
