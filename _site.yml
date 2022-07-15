@@ -11,4 +11,6 @@ navbar:
       href: about.html
     - text: "Teaching"
       href: teaching.html
+    - text: "Projects"
+      href: projects.html
 output: distill::distill_article
