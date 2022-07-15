@@ -1,67 +1,71 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-# distill for R Markdown <img src="man/figures/logo.png" align="right" height="139"/>
+# About
 
-<!-- badges: start -->
+A personal website:
 
-[![CRAN
-status](https://www.r-pkg.org/badges/version/distill)](https://CRAN.R-project.org/package=distill)
-[![R-CMD-check](https://github.com/rstudio/distill/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/rstudio/distill/actions/workflows/R-CMD-check.yaml)
-[![Codecov test
-coverage](https://codecov.io/gh/rstudio/distill/branch/main/graph/badge.svg)](https://app.codecov.io/gh/rstudio/distill?branch=main)
+⚒️ created with the [distill](https://rstudio.github.io/distill/)
+package in R,
 
-<!-- badges: end -->
+💡 continuously inspired by community contributed tips at the
+[distillery](https://jhelvy.github.io/distillery/) and all content
+creators out there,
 
-Distill for R Markdown is a web publishing format optimized for
-scientific and technical communication. Distill articles include:
+🗨️ with commenting by [giscus](https://giscus.app/), and
 
--   Reader-friendly typography that adapts well to mobile devices.
--   Features essential to technical writing like LaTeX math, citations,
-    and footnotes.
--   Flexible figure layout options (e.g. displaying figures at a larger
-    width than the article text).
--   Attractively rendered tables with optional support for pagination.
--   Support for a wide variety of diagramming tools for illustrating
-    concepts.
--   The ability to incorporate JavaScript and D3-based interactive
-    visualizations.
--   A variety of ways to publish articles, including support for
-    publishing collections or articles as a Distill website.
+🚀 deployed through Netlify.
 
-Distill for R Markdown is based on the [Distill web
-framework](https://github.com/distillpub/template), which was originally
-created for use in the Distill Machine Learning Journal. Distill for R
-Markdown combines the technical authoring features of Distill with [R
-Markdown](https://rmarkdown.rstudio.com/), enabling a fully reproducible
-workflow based on literate programming.
+# Some stats ⚠️ WIP
 
-## Installation
+🎉 Piping Hot Data has **21** posts since **2018-11-05**\!
 
-Install the released version of distill from CRAN:
+📅 That’s a post roughly every **33** days, or about 0.8 posts per month,
+since 2020-08-30.
 
-``` r
-install.packages("distill")
-```
+✍️ The last post was published **42** days ago ([Locating R and R
+Adjacent Software and Configuration
+Files](https://www.pipinghotdata.com/posts/2022-06-02-locating-r-and-r-adjacent-software-and-configuration-files)).
+As Yihui Xie advises, I try to write like no one is reading. But your
+feedback does help motivate me to keep writing. 😉
 
-Or install the development version from GitHub with:
+![](README_files/figure-gfm/plot-obj-1.png)<!-- -->
 
-``` r
-# install.packages("remotes")
-remotes::install_github("rstudio/distill")
-# install.packages("pak")
-pak::pak("rstudio/distill")
-```
+<details>
 
-Learn more about using Distill at <https://rstudio.github.io/distill/>.
+<summary>📂 Click to expand a full list of posts</summary>
 
-## Get help
+| Date       | Title                                                                                                                                                                                             |
+| :--------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| 2022-06-02 | [Locating R and R Adjacent Software and Configuration Files](https://www.pipinghotdata.com/posts/2022-06-02-locating-r-and-r-adjacent-software-and-configuration-files)                           |
+| 2022-05-12 | [Code line highlighting in Quarto revealjs presentations](https://www.pipinghotdata.com/posts/2022-05-12-code-line-highlighting-in-quarto-revealjs-presentations)                                 |
+| 2022-01-24 | [Report Ready PDF tables with rmarkdown, knitr, kableExtra, and LaTeX](https://www.pipinghotdata.com/posts/2022-01-24-report-ready-pdf-tables-with-rmarkdown-knitr-kableextra-and-latex)          |
+| 2021-12-13 | [Modifying the GitHub repo containing my Distill website](https://www.pipinghotdata.com/posts/2021-12-13-modifying-the-github-repo-containing-my-distill-website)                                 |
+| 2021-11-23 | [Getting started with unit testing in R](https://www.pipinghotdata.com/posts/2021-11-23-getting-started-with-unit-testing-in-r)                                                                   |
+| 2021-10-11 | [Estimating correlations adjusted for group membership](https://www.pipinghotdata.com/posts/2021-10-11-estimating-correlations-adjusted-for-group-membership)                                     |
+| 2021-09-23 | \[Curating for @WeAreRLadies on Twitter\](<https://www.pipinghotdata.com/posts/2021-09-23-curating-for-wearerladies-on-twitter>)                                                                  |
+| 2021-08-27 | [A tidyverse pivot approach to data preparation in R](https://www.pipinghotdata.com/posts/2021-08-27-a-tidyverse-pivot-approach-to-data-preparation-in-r)                                         |
+| 2021-07-14 | [Polished summary tables in R with gtsummary](https://www.pipinghotdata.com/posts/2021-07-14-polished-summary-tables-in-r-with-gtsummary)                                                         |
+| 2021-06-01 | [Custom interactive sunbursts with ggplot in R](https://www.pipinghotdata.com/posts/2021-06-01-custom-interactive-sunbursts-with-ggplot-in-r)                                                     |
+| 2021-04-01 | [Deploy previews with Netlifly](https://www.pipinghotdata.com/posts/2021-04-01-deploy-previews-with-netlifly)                                                                                     |
+| 2021-03-08 | [R-Ladies styled code gifs with xaringan and flipbookr](https://www.pipinghotdata.com/posts/2021-03-08-r-ladies-styled-code-gifs-with-xaringan-and-flipbookr)                                     |
+| 2021-02-15 | [GGanimating a geographic introduction](https://www.pipinghotdata.com/posts/2021-02-15-gganimating-a-geographic-introduction)                                                                     |
+| 2021-01-11 | [From gmailr to the Google Books API](https://www.pipinghotdata.com/posts/2021-01-11-from-gmailr-to-the-google-books-api)                                                                         |
+| 2020-12-23 | [Leveraging labelled data in R](https://www.pipinghotdata.com/posts/2020-12-23-leveraging-labelled-data-in-r)                                                                                     |
+| 2020-10-25 | [Your first R package in 1 hour](https://www.pipinghotdata.com/posts/2020-10-25-your-first-r-package-in-1-hour)                                                                                   |
+| 2020-09-22 | [Exporting editable ggplot graphics to PowerPoint with officer and purrr](https://www.pipinghotdata.com/posts/2020-09-22-exporting-editable-ggplot-graphics-to-powerpoint-with-officer-and-purrr) |
+| 2020-09-07 | [Introducing RStudio and R Markdown](https://www.pipinghotdata.com/posts/2020-09-07-introducing-the-rstudio-ide-and-r-markdown)                                                                   |
+| 2020-08-30 | [A job interview presentation inspired by the R community](https://www.pipinghotdata.com/posts/2020-08-30-a-job-interview-presentation-inspired-by-the-r-community)                               |
+| 2018-12-11 | [Stringr 4 ways](https://www.pipinghotdata.com/posts/2018-12-11-stringr-4-ways)                                                                                                                   |
+| 2018-11-05 | [Welcome to Piping Hot Data](https://www.pipinghotdata.com/posts/2018-11-05-welcome-to-piping-hot-data)                                                                                           |
 
-The [RStudio community](https://community.rstudio.com/tag/distill) is a
-friendly place to ask any questions about distill.
+</details>
 
-## Code of Conduct
+-----
 
-Please note that the distill project is released with a [Contributor
-Code of Conduct](https://pkgs.rstudio.com/distill/CODE_OF_CONDUCT.html).
-By contributing to this project, you agree to abide by its terms.
+*The automatically rendered readme was inspired by [Matt
+Dray](https://www.rostrum.blog/2021/04/14/gha-readme/); giscus
+commenting was motivated by [Joel
+Nitta](https://www.joelnitta.com/posts/2021-11-24_using-giscus/).*
+
+*Updated 2022-07-14 05:37:43*
