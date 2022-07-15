@@ -5,7 +5,7 @@
 <a href="CV">CV</a>
 <a href="teaching">Teaching</a>
 <a href="projects">Projects</a>
-<a href="resources.html">Resources</a>
+<a href="resources">Resources</a>
 </div>
 </nav>
 </header>
