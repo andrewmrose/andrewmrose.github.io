@@ -2,7 +2,7 @@
 <nav class="distill-site-nav distill-site-header">
 <div class="nav-left">
 <a href="index.html" class="title">Home</a>
-<a href="cv.html">CV</a>
+<a href="CV">CV</a>
 <a href="projects.html">Projects</a>
 <a href="teaching.html">Teaching</a>
 <a href="resources.html">Resources</a>
