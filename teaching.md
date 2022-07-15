@@ -30,28 +30,4 @@ In the past I have taught:
 and tutored various mathematics and statistics courses at The Univeristy of Sydney including lecturing for *MATH1013 Mathematical Modelling* (50%).
 
 
-# Workshop
-
-<ul>
-```{r, results="asis"}
-small <- function(x) paste0("<span style='font-size:0.75rem;line-height:0.9rem;'>", x, "</span>")
-dat <- read_csv("../cv/data/workshops.csv")
-dat %>% 
-  filter(parent!="no") %>% 
-  mutate(text = glue::glue("<li><b>{title}</b> <a href='{url}'><i class='fas fa-globe'></i></a><br> {small(paste0('Last hosted by the <b>', host, '</b> at ', date_start))}</li>")) %>% 
-  pull(text) %>% 
-  paste(collapse = "\n") %>% 
-  cat()
-```
-<ul>
-```{r, results="asis"}
-dat %>% 
-  filter(group=="SMfOMAB1",
-         parent=="no") %>% 
-  mutate(text = glue::glue("<li style='font-size:0.85rem;'>{title} <a href='{url}'><i class='fas fa-link'></i></a></li>")) %>% 
-  pull(text) %>% 
-  paste(collapse = "\n") %>% 
-  cat()
-```
-</ul>
 </ul>
