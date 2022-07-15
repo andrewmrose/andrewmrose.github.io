@@ -3,8 +3,8 @@
 <div class="nav-left">
 <a href="index.html" class="title">Home</a>
 <a href="CV">CV</a>
-<a href="teaching.html">Teaching</a>
-<a href="projects.html">Projects</a>
+<a href="teaching">Teaching</a>
+<a href="projects">Projects</a>
 <a href="resources.html">Resources</a>
 </div>
 </nav>
