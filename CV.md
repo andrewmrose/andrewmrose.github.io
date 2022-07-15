@@ -1,2 +1,2 @@
-![Andrew Rose's CV](https://www.dropbox.com/sh/qpy4xp8l36d7fra/AACYM2pwJLMsiYeBSKzub7Mta?dl=0 "AMRCV")
+![](https://previews.dropbox.com/p/thumb/ABmbWbsCHOs9TTy58SkYxS2MbYqYKiTwsu2N215xV9qGopVPHxqICRtVh7GCSA0obNHS_vxxjimxrO-Op3YcmiXHhhb6qoriBMiJnZ5n3HY0oEzMeZNbeGdLQWu7bC1_YFaHA4k-0w2OLCUMA250FvOn-Cb-UUJT76K27k3a9XJ03vpCcSSQ3Hu51uJoSB7YCaH2NkwvB5FTxBm-d1Nlg2-5nM9sEeCHFQFAd8cB095yODk_u65ZNc_9JcgBzx9ery-6FaWAA5LD3M_IfzOpDlGwWCbu1Si2HHFAsKU8Ayg4CZAYFPP6Qt3H0BWSggWZhBTp939YJzHnBopZ5nUqGf255DiH_ICHFkMJFBPa_t7ulUfryGsLA8H-RXcdnDivgHI/p.jpeg "AMRCV")
 
