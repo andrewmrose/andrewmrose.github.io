@@ -4,6 +4,8 @@ description: |
   Welcome to the website. I hope you enjoy it!
 image: "images/me1.jpeg"
 links:
+  - label: CV
+    url: "content/AndrewRoseResume.pdf"
   - label: Holland College
     url: "https://www.hollandcollege.com/"
   - label: GitHub
