@@ -2,7 +2,7 @@
 title: "My Website"
 description: |
   Welcome to the website. I hope you enjoy it!
-
+image: "images/me.png"
 links:
   - label: Holland College
     url: "https://www.hollandcollege.com/"
