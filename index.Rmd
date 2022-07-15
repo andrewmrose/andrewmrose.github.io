@@ -2,7 +2,19 @@
 title: "My Website"
 description: |
   Welcome to the website. I hope you enjoy it!
+
+links:
+  - label: Holland College
+    url: "https://www.hollandcollege.com/"
+  - label: GitHub
+    url: "https://github.com/andrewmrose"
+  - label: Email
+    url: "mailto:andrewmrose@protonmail.com"
 site: distill::distill_website
+
+  
+output:
+  postcards::trestles
 ---
 
 ```{r setup, include=FALSE}
