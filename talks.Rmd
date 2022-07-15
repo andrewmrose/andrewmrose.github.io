@@ -1,6 +1,0 @@
----
-title: "Talks"
-twitter:
-  creator: "@PipingHotData"
-listing: talks
----

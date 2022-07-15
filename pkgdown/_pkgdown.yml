@@ -1,0 +1,147 @@
+destination: reference
+
+url: https://pkgs.rstudio.com/rmarkdown/
+
+template:
+  package: quillt
+  opengraph:
+    image:
+      src: man/figures/logo.png
+      alt: "R Markdown package"
+    twitter:
+      creator: "@rstudio"
+      card: summary
+
+development:
+  version_tooltip: "Development version"
+
+home:
+  strip_header: false
+  links:
+  - text: Learn more
+    href: https://rmarkdown.rstudio.com/
+
+navbar:
+  title: ~
+  type: default
+  structure:
+    left:  [intro, examples, articles]
+    right: [reference, news, github]
+  components:
+    home: ~
+    examples:
+      text: Examples
+      href: articles/articles/examples.html
+    articles:
+      text: Articles
+      menu:
+        - text: "About Lua filters"
+          href: articles/lua-filters.html
+    reference:
+      text: Reference
+      href: reference/index.html
+    github:
+      icon: fab fa-github fa-lg
+      href: https://github.com/rstudio/rmarkdown
+    news:
+      text: News
+      menu:
+        - text: "Changelog"
+          href: news/index.html
+        - text: "------------------"
+        - text: "Blog posts"
+        - text: "Version 2.7"
+          href: https://blog.rstudio.com/2021/04/15/2021-spring-rmd-news/
+        - text: "Version 2.6"
+          href: https://blog.rstudio.com/2020/12/21/rmd-news
+
+
+reference:
+- title: Output formats
+  desc: >
+    These output formats can be specified in your document's YAML frontmatter.
+    Each output format has different arguments available which you can see on
+    their respective help pages.
+  contents:
+  - ends_with("_presentation")
+  - ends_with("_document")
+  - html_vignette
+  - html_notebook
+  - html_fragment
+
+- title: Rendering documents
+  desc: These functions can be used to render or "compile" an R Markdown document.
+  contents:
+  - starts_with("compile")
+  - starts_with("render")
+
+- title: Helper functions
+  desc: These functions are useful when working with R Markdown documents.
+  contents:
+  - draft
+  - available_templates
+  - find_external_resources
+  - includes
+  - metadata
+  - paged_table
+  - relative_to
+  - contains("params")
+
+- title: HTML notebooks
+  desc: >
+    Functions for parsing and generating output for the [`html_notebook`
+    output format](https://rmarkdown.rstudio.com/lesson-10.html).
+  contents:
+  - starts_with("html_notebook_")
+  - ends_with("_html_notebook")
+  - convert_ipynb
+
+- title: R Markdown websites
+  desc: >
+    Functions for rendering collections of R Markdown documents as a [website](https://rmarkdown.rstudio.com/lesson-13.html).
+    Note that extension packages like [bookdown](https://github.com/rstudio/bookdown),
+    [blogdown](https://github.com/rstudio/blogdown), and
+    [distill](https://github.com/rstudio/distill) also render multiple
+    R Markdown files.
+  contents:
+  - contains("site")
+
+- title: Interactive documents
+  desc: >
+    These functions add [interactivity](https://rmarkdown.rstudio.com/lesson-14.html)
+    to R Markdown documents by adding reactive components made with [Shiny](http://shiny.rstudio.com/).
+  contents:
+  - contains("shiny")
+  - run
+
+- title: Pandoc
+  desc: ~
+  contents:
+  - starts_with("pandoc_")
+  - ends_with("_pandoc")
+
+- title: Customizing & extending output formats
+  desc: ~
+  contents:
+  - all_output_formats
+  - default_output_format
+  - contains("dependen")
+  - html_document_base
+  - starts_with("knitr_")
+  - output_format
+  - output_metadata
+  - resolve_output_format
+  - rmd_metadata
+  - rmarkdown_format
+  - pkg_file_lua
+
+- title: The rmarkdown package
+  desc: ~
+  contents:
+  - rmarkdown-package
+
+authors:
+  "Yihui Xie":
+    href: https://yihui.org
+  "Kevin Ushey":
+    href: https://kevinushey.github.io

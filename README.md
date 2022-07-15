@@ -1,71 +1,76 @@
+# rmarkdown <img src='man/figures/logo.png' align="right" height="138.5" />
 
-<!-- README.md is generated from README.Rmd. Please edit that file -->
+<!-- badges: start -->
+[![R-CMD-check](https://github.com/rstudio/rmarkdown/workflows/R-CMD-check/badge.svg)](https://github.com/rstudio/rmarkdown/actions)
+[![CRAN release](https://www.r-pkg.org/badges/version/rmarkdown)](https://cran.r-project.org/package=rmarkdown)
+[![Codecov test coverage](https://codecov.io/gh/rstudio/rmarkdown/branch/main/graph/badge.svg)](https://app.codecov.io/gh/rstudio/rmarkdown?branch=main)
+<!-- badges: end -->
 
-# About
 
-A personal website:
+The **rmarkdown** package helps you create dynamic analysis documents that combine code, rendered output (such as figures), and prose. You bring your data, code, and ideas, and R Markdown renders your content into a polished document that can be used to:
 
-⚒️ created with the [distill](https://rstudio.github.io/distill/)
-package in R,
+- Do data science interactively within the RStudio IDE,
 
-💡 continuously inspired by community contributed tips at the
-[distillery](https://jhelvy.github.io/distillery/) and all content
-creators out there,
+- Reproduce your analyses,
 
-🗨️ with commenting by [giscus](https://giscus.app/), and
+- Collaborate and share code with others, and
 
-🚀 deployed through Netlify.
+- Communicate your results with others.
 
-# Some stats ⚠️ WIP
+R Markdown documents can be rendered to many output formats including HTML documents, PDFs, Word files, slideshows, and more, allowing you to focus on the content while R Markdown takes care of your presentation. 
 
-🎉 Piping Hot Data has **21** posts since **2018-11-05**\!
+## Books
 
-📅 That’s a post roughly every **33** days, or about 0.8 posts per month,
-since 2020-08-30.
+<a href="https://bookdown.org/yihui/rmarkdown/"><img class="book" src="https://bookdown.org/yihui/rmarkdown/images/cover.png" alt="R Markdown: The Definitive Guide" height="400"></a>
+<a href="https://bookdown.org/yihui/rmarkdown-cookbook/"><img class="book" src="https://bookdown.org/yihui/rmarkdown-cookbook/images/cover.png" alt="R Markdown Cookbook" height="400"></a>
 
-✍️ The last post was published **42** days ago ([Locating R and R
-Adjacent Software and Configuration
-Files](https://www.pipinghotdata.com/posts/2022-06-02-locating-r-and-r-adjacent-software-and-configuration-files)).
-As Yihui Xie advises, I try to write like no one is reading. But your
-feedback does help motivate me to keep writing. 😉
+See more about them in [Get Started](https://pkgs.rstudio.com/rmarkdown/articles/rmarkdown.html).
 
-![](README_files/figure-gfm/plot-obj-1.png)<!-- -->
+## Installation
 
-<details>
+The easiest way to install the **rmarkdown** package is from within the [RStudio IDE](https://www.rstudio.com/products/rstudio/download/), but you don't need to explicitly install it or load it, as RStudio automatically does both when needed. A recent version of Pandoc (>= 1.12.3) is also required; RStudio also automatically includes this too so you do not need to download Pandoc if you plan to use rmarkdown from the RStudio IDE.
 
-<summary>📂 Click to expand a full list of posts</summary>
+If you want to use the rmarkdown package outside of RStudio, you can install the package from CRAN as follows:
 
-| Date       | Title                                                                                                                                                                                             |
-| :--------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| 2022-06-02 | [Locating R and R Adjacent Software and Configuration Files](https://www.pipinghotdata.com/posts/2022-06-02-locating-r-and-r-adjacent-software-and-configuration-files)                           |
-| 2022-05-12 | [Code line highlighting in Quarto revealjs presentations](https://www.pipinghotdata.com/posts/2022-05-12-code-line-highlighting-in-quarto-revealjs-presentations)                                 |
-| 2022-01-24 | [Report Ready PDF tables with rmarkdown, knitr, kableExtra, and LaTeX](https://www.pipinghotdata.com/posts/2022-01-24-report-ready-pdf-tables-with-rmarkdown-knitr-kableextra-and-latex)          |
-| 2021-12-13 | [Modifying the GitHub repo containing my Distill website](https://www.pipinghotdata.com/posts/2021-12-13-modifying-the-github-repo-containing-my-distill-website)                                 |
-| 2021-11-23 | [Getting started with unit testing in R](https://www.pipinghotdata.com/posts/2021-11-23-getting-started-with-unit-testing-in-r)                                                                   |
-| 2021-10-11 | [Estimating correlations adjusted for group membership](https://www.pipinghotdata.com/posts/2021-10-11-estimating-correlations-adjusted-for-group-membership)                                     |
-| 2021-09-23 | \[Curating for @WeAreRLadies on Twitter\](<https://www.pipinghotdata.com/posts/2021-09-23-curating-for-wearerladies-on-twitter>)                                                                  |
-| 2021-08-27 | [A tidyverse pivot approach to data preparation in R](https://www.pipinghotdata.com/posts/2021-08-27-a-tidyverse-pivot-approach-to-data-preparation-in-r)                                         |
-| 2021-07-14 | [Polished summary tables in R with gtsummary](https://www.pipinghotdata.com/posts/2021-07-14-polished-summary-tables-in-r-with-gtsummary)                                                         |
-| 2021-06-01 | [Custom interactive sunbursts with ggplot in R](https://www.pipinghotdata.com/posts/2021-06-01-custom-interactive-sunbursts-with-ggplot-in-r)                                                     |
-| 2021-04-01 | [Deploy previews with Netlifly](https://www.pipinghotdata.com/posts/2021-04-01-deploy-previews-with-netlifly)                                                                                     |
-| 2021-03-08 | [R-Ladies styled code gifs with xaringan and flipbookr](https://www.pipinghotdata.com/posts/2021-03-08-r-ladies-styled-code-gifs-with-xaringan-and-flipbookr)                                     |
-| 2021-02-15 | [GGanimating a geographic introduction](https://www.pipinghotdata.com/posts/2021-02-15-gganimating-a-geographic-introduction)                                                                     |
-| 2021-01-11 | [From gmailr to the Google Books API](https://www.pipinghotdata.com/posts/2021-01-11-from-gmailr-to-the-google-books-api)                                                                         |
-| 2020-12-23 | [Leveraging labelled data in R](https://www.pipinghotdata.com/posts/2020-12-23-leveraging-labelled-data-in-r)                                                                                     |
-| 2020-10-25 | [Your first R package in 1 hour](https://www.pipinghotdata.com/posts/2020-10-25-your-first-r-package-in-1-hour)                                                                                   |
-| 2020-09-22 | [Exporting editable ggplot graphics to PowerPoint with officer and purrr](https://www.pipinghotdata.com/posts/2020-09-22-exporting-editable-ggplot-graphics-to-powerpoint-with-officer-and-purrr) |
-| 2020-09-07 | [Introducing RStudio and R Markdown](https://www.pipinghotdata.com/posts/2020-09-07-introducing-the-rstudio-ide-and-r-markdown)                                                                   |
-| 2020-08-30 | [A job interview presentation inspired by the R community](https://www.pipinghotdata.com/posts/2020-08-30-a-job-interview-presentation-inspired-by-the-r-community)                               |
-| 2018-12-11 | [Stringr 4 ways](https://www.pipinghotdata.com/posts/2018-12-11-stringr-4-ways)                                                                                                                   |
-| 2018-11-05 | [Welcome to Piping Hot Data](https://www.pipinghotdata.com/posts/2018-11-05-welcome-to-piping-hot-data)                                                                                           |
+```r
+install.packages("rmarkdown")
+```
 
-</details>
+If you want to use the development version of the rmarkdown package (either with or without RStudio), you can install the package from GitHub via the [**remotes** package](https://remotes.r-lib.org):
 
------
+```r
+remotes::install_github('rstudio/rmarkdown')
+```
 
-*The automatically rendered readme was inspired by [Matt
-Dray](https://www.rostrum.blog/2021/04/14/gha-readme/); giscus
-commenting was motivated by [Joel
-Nitta](https://www.joelnitta.com/posts/2021-11-24_using-giscus/).*
+If not using the RStudio IDE, you'll need to install a recent version of Pandoc (>= 1.12.3); see the [Pandoc installation instructions](https://pandoc.org/installing.html) for help.
 
-*Updated 2022-07-14 05:37:43*
+## Usage
+
+The easiest way to make a new R Markdown document is from within RStudio. Go to _File > New File > R Markdown_. From the new file wizard, you may:
+
++ Provide a document title (_optional but recommended_),
++ Provide an author name (_optional but recommended_),
++ Select a default output format- HTML is the recommended format for authoring, and you can switch the output format anytime (_required_), 
++ Click **OK** (_required_).
+
+Once inside your new `.Rmd` file, you should see some boilerplate text that includes code chunks. Use the "Knit" button in the RStudio IDE to render the file and preview the output with a single click or use the keyboard shortcut Cmd/Ctrl + Shift + K. 
+
+You can also delete all the text below the YAML frontmatter and fill in your own `.Rmd` by:
+
++ Adding code chunks (keyboard shortcut: `Ctrl + Alt + I`; OS X: `Cmd + Option + I`),
++ Writing prose with [Markdown formatting](https://www.markdowntutorial.com/), and
++ Running each code chunk interactively by clicking the ![The run button](https://rmarkdown.rstudio.com/images/notebook-run-chunk.png) icon within RStudio. 
+
+You can also click "Knit to HTML" again to render the full document with all code chunks. For more help getting started in R Markdown, please see the [R Markdown website](https://rmarkdown.rstudio.com/lesson-1.html) or use the **"Get Started"** links at the top of this page.
+
+## Getting help
+
+There are two main places to get help:
+
+1. The [RStudio community](https://community.rstudio.com/c/r-markdown/10) is a friendly place to ask any questions about rmarkdown and the R Markdown family of packages.
+
+1. [Stack Overflow](https://stackoverflow.com/questions/tagged/r-markdown) is a great source of answers to common rmarkdown questions. It is also a great place to get help, once you have created a reproducible example that illustrates your problem.
+
+## Code of Conduct
+
+Please note that the **rmarkdown** project is released with a [Contributor Code of Conduct](https://pkgs.rstudio.com/rmarkdown/CODE_OF_CONDUCT.html). By contributing to this project, you agree to abide by its terms.

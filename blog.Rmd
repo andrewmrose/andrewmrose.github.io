@@ -1,6 +1,0 @@
----
-title: "Blog"
-twitter:
-  creator: "@PipingHotData"
-listing: posts
----
