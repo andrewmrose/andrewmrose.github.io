@@ -13,4 +13,9 @@ navbar:
       href: teaching.html
     - text: "Projects"
       href: projects.html
+      menu:
+      - text: "Professional"
+      href: professional.html
+      - text: "Personal"
+      href: personal.html
 output: distill::distill_article

@@ -3,7 +3,7 @@
     "path": "~/Documents/GitHub/andrewmrose.github.io/_site.yml",
     "project_path": "_site.yml",
     "type": "yaml",
-    "hash": "3224062468",
+    "hash": "0",
     "contents": "",
     "dirty": false,
     "created": 1657920153316.0,
@@ -12,15 +12,15 @@
     "properties": {
         "source_window_id": "",
         "Source": "Source",
-        "cursorPosition": "14,20",
+        "cursorPosition": "19,20",
         "scrollLine": "0"
     },
     "folds": "",
-    "lastKnownWriteTime": 1657924695,
+    "lastKnownWriteTime": 1657925189,
     "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1657924695503,
+    "last_content_update": 1657925189888,
     "read_only": false,
     "read_only_alternatives": []
 }
