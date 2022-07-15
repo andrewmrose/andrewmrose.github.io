@@ -9,7 +9,6 @@
 <a href="projects.html">Projects</a>
 <a href="teaching.html">Teaching</a>
 <a href="resources.html">Resources</a>
-<input id="distill-search" class="nav-search hidden" type="text" placeholder="Search..."/>
 </div>
 </nav>
 </header>
