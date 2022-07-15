@@ -2,7 +2,7 @@
 title: "Andrew M Rose"
 description: |
   Welcome to the website. I hope you enjoy it!
-image: "images/me1.jpeg"
+image: "images/meheadshot.jpeg"
 links:
   - label: CV
     url: "content/AndrewRoseResume.pdf"
@@ -18,6 +18,8 @@ site: distill::distill_website
 output:
   postcards::trestles
 ---
+
+
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE)
