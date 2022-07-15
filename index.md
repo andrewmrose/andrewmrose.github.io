@@ -13,9 +13,8 @@
 </nav>
 </header>
 
-<div class="d-title">
-<h1>Andrew M Rose</h1>
-</div>
+
+<br>
 
 You can use the [editor on GitHub](https://github.com/andrewmrose/andrewmrose.github.io/edit/main/index.md) to maintain and preview the content for your website in Markdown files.
 
