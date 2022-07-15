@@ -1,5 +1,0 @@
----
-title: "Examples"
----
-
-See the R Markdown gallery for examples: <https://rmarkdown.rstudio.com/gallery>.
