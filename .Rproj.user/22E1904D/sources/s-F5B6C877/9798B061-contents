@@ -5,7 +5,7 @@ links:
   - label: '[`r fontawesome::fa("file")` **CV**](content/AndrewRoseResume.pdf)'
   - label: '[`r fontawesome::fa("user-graduate")` **Holland College**](https://www.hollandcollege.com)'
   - label: '[`r fontawesome::fa("github")`](https://github.com/andrewmrose)'
-  - label: '[`r fontawesome::fa("at")`](mailto:andrewmrose@protonmail.com)'
+  - label: '[`r fontawesome::fa("at")`](mailto:hello@andrewmrose.ca)'
 
 site: distill::distill_website
 
