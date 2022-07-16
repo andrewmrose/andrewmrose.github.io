@@ -2,19 +2,17 @@
   "articles": [
     {
       "path": "about.html",
-      "title": "About this site",
-      "description": "Some additional details about the website",
+      "title": "About Me",
       "author": [],
-      "contents": "\n\n\n\n",
-      "last_modified": "2022-07-15T23:11:54-03:00"
+      "contents": "\nBiography\nI’m originally from a small town in Newfoundland, called Harbour Grace. Growing up I loved\nmath and science, so when I had the chance I decided to pursue those\nsubjects in university. For my BSc (Joint Hons) in Applied Math and\nPhysics, I completed research in numerical methods for adaptive mesh\ngeneration. This research was conducted under the supervision of\nDr. Ronald Haynes. Next, I completed my MSc in Math under the\nsupervision of Dr. Hari Kunduri. This research focused on theoretical\nblack holes and their geometry. My BEd in Intermediate/Secondary\nEducation was completed as I finished my MSc. This included a teaching\ninternship at Prince of Wales Collegiate in St. John’s, NL.\nIn my spare time I enjoy spending time outside. This includes\nrelaxing beach trips or day long hiking expeditions. Growing up in\nNewfoundland gives one ample opportunity to explore nature and I’m lucky\nto continue doing so on beautiful Prince Edward Island. I live in\nCharlottetown with my wife and our five pets (2 dogs and 3 cats).\nTrail leading to the base of Gros Morne\nMountatin, Gros Morne National Park, NewfoundlandView from the way down Gros Morne\nMountatin, Gros Morne National Park, NewfoundlandView from the top of the Tablelands, Gros\nMorne National Park, NewfoundlandScenery between Cape Tryon Lighthouse and\nNew London Lighthouse, Prince Edward IslandScenery between Cape Tryon Lighthouse and\nNew London Lighthouse, Prince Edward IslandOne of my dogs enjoying doggy sundae,\nCharlottetown, Prince Edward Island\n\n\n",
+      "last_modified": "2022-07-16T00:36:41-03:00"
     },
     {
       "path": "index.html",
       "title": "Andrew M Rose",
-      "description": "Welcome to the website. I hope you enjoy it!\n",
       "author": [],
       "contents": "\n\n          \n          \n          Andrew M Rose\n          \n          \n          \n          \n          \n          About\n          Teaching\n          \n          \n          Projects\n           \n          ▾\n          \n          \n          Professional\n          Personal\n          \n          \n          ☰\n          \n          \n      \n        \n          \n            \n              \n            \n              Andrew M Rose\n            \n            \n              \n                \n                    \n                      \n                        CV\n                      \n                    \n                  \n                                    \n                    \n                      \n                        Holland College\n                      \n                    \n                  \n                                    \n                    \n                      \n                        \n                      \n                    \n                  \n                                    \n                    \n                      \n                        \n                      \n                    \n                  \n                                  \n            \n          \n        \n        \n        \n          \n            \n            Oh Hi\n            I’m Andrew Rose and I’m a Learning Manager of Math and\n            Physics at Holland College on Prince Edward Island. I teach\n            at both the Summerside\n            Harbourfront and Charlottetown,\n            Prince of Wales Campuses. Prior to joining Holland\n            College I worked with Health PEI as a Health Information\n            Specialist performing statistical analysis and data\n            visualization of data related to the province’s healthcare\n            services. As well, I was an Instructor at the College\n            of the North Atlantic in Carbonear, Newfoundland. There\n            I taught post-secondary mathematics within the CAS\n            Transfer Program. I hold a BSc (Joint Hons) in Applied\n            Math and Physics, an MSc in Math, and a BEd in\n            Intermediate/Secondary Education. Please take a look at my\n            CV for a more\n            detailed history.\n            This site is intended to be a home for course resources,\n            professional data projects, and personal projects which may\n            be data based or otherwise. Please feel free to contact me\n            regarding any errors to the website, or with any questions\n            for the published projects!\n            \n          \n        \n      \n    \n\n    \n      \n        \n          \n            \n              \n            \n              Andrew M Rose\n            \n            \n              \n                \n                                    \n                    \n                      CV\n                    \n                  \n                                    \n                    \n                      Holland College\n                    \n                  \n                                    \n                    \n                      \n                    \n                  \n                                    \n                    \n                      \n                    \n                  \n                                  \n              \n            \n            \n              \n              Oh Hi\n              I’m Andrew Rose and I’m a Learning Manager of Math and\n              Physics at Holland College on Prince Edward Island. I\n              teach at both the Summerside\n              Harbourfront and Charlottetown,\n              Prince of Wales Campuses. Prior to joining Holland\n              College I worked with Health PEI as a Health Information\n              Specialist performing statistical analysis and data\n              visualization of data related to the province’s healthcare\n              services. As well, I was an Instructor at the College\n              of the North Atlantic in Carbonear, Newfoundland.\n              There I taught post-secondary mathematics within the CAS\n              Transfer Program. I hold a BSc (Joint Hons) in Applied\n              Math and Physics, an MSc in Math, and a BEd in\n              Intermediate/Secondary Education. Please take a look at my\n              CV for a more\n              detailed history.\n              This site is intended to be a home for course\n              resources, professional data projects, and personal\n              projects which may be data based or otherwise. Please feel\n              free to contact me regarding any errors to the website, or\n              with any questions for the published projects!\n              \n            \n        \n      \n    \n\n    \n    \n    ",
-      "last_modified": "2022-07-15T23:11:54-03:00"
+      "last_modified": "2022-07-16T00:36:41-03:00"
     },
     {
       "path": "personal.html",
@@ -22,7 +20,7 @@
       "author": [],
       "date": "2022-07-15",
       "contents": "\n\n\n\n",
-      "last_modified": "2022-07-15T23:11:54-03:00"
+      "last_modified": "2022-07-16T00:36:42-03:00"
     },
     {
       "path": "professional.html",
@@ -30,7 +28,7 @@
       "author": [],
       "date": "2022-07-15",
       "contents": "\n\n\n\n",
-      "last_modified": "2022-07-15T23:11:55-03:00"
+      "last_modified": "2022-07-16T00:36:42-03:00"
     },
     {
       "path": "projects.html",
@@ -38,7 +36,7 @@
       "author": [],
       "date": "2022-07-15",
       "contents": "\nA directory for personal and professional projects.\n\n\n\n",
-      "last_modified": "2022-07-15T23:11:55-03:00"
+      "last_modified": "2022-07-16T00:36:42-03:00"
     },
     {
       "path": "teaching.html",
@@ -46,7 +44,7 @@
       "author": [],
       "date": "2022-07-15",
       "contents": "\nHolland College\n2022-2023\nCollege of the North\nAtlantic\n2020-2021\nMath 1104 - Algebra and Trigonometry\nMath 1120 - Finite Math I\nMath 1121 - Finite Math II\nMath 1130 - Calculus I\nMath 1131 - Calculus II\n2019-2020\nMath 1104 - Algebra and Trigonometry\nMath 1120 - Finite Math I\nMath 1121 - Finite Math II\nMath 1130 - Calculus I\nMath 1131 - Calculus II\n\n\n\n",
-      "last_modified": "2022-07-15T23:11:55-03:00"
+      "last_modified": "2022-07-16T00:36:43-03:00"
     }
   ],
   "collections": []

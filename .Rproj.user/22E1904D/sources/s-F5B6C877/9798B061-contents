@@ -1,13 +1,11 @@
 ---
 title: "Andrew M Rose"
-description: |
-  Welcome to the website. I hope you enjoy it!
 image: "images/meheadshot.jpeg"
 links:
   - label: '[`r fontawesome::fa("file")` **CV**](content/AndrewRoseResume.pdf)'
   - label: '[`r fontawesome::fa("user-graduate")` **Holland College**](https://www.hollandcollege.com)'
   - label: '[`r fontawesome::fa("github")`](https://github.com/andrewmrose)'
-  - label: '[`r fontawesome::fa("envelope")`](mailto:andrewmrose@protonmail.com)'
+  - label: '[`r fontawesome::fa("at")`](mailto:andrewmrose@protonmail.com)'
 
 site: distill::distill_website
 
