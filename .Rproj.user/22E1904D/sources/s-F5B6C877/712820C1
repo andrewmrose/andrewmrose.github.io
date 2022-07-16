@@ -3,7 +3,7 @@
     "path": "~/Documents/GitHub/andrewmrose.github.io/teaching.Rmd",
     "project_path": "teaching.Rmd",
     "type": "r_markdown",
-    "hash": "3979679814",
+    "hash": "1303167605",
     "contents": "",
     "dirty": false,
     "created": 1657920251755.0,
@@ -13,15 +13,15 @@
         "tempName": "Untitled1",
         "source_window_id": "",
         "Source": "Source",
-        "cursorPosition": "31,23",
-        "scrollLine": "10"
+        "cursorPosition": "22,24",
+        "scrollLine": "2"
     },
     "folds": "",
-    "lastKnownWriteTime": 1657933362,
+    "lastKnownWriteTime": 1657936555,
     "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1657933362576,
+    "last_content_update": 1657936555940,
     "read_only": false,
     "read_only_alternatives": []
 }
