@@ -31,6 +31,8 @@ knitr::opts_chunk$set(echo = TRUE)
 [T3 Transit](https://www.t3transit.ca/)  
 [City of Charlottetown](https://www.charlottetown.ca/)  
 [City of Summerside](https://www.summerside.ca/)  
+[Charlottetown Library](https://www.princeedwardisland.ca/en/point-interest/charlottetown-library-learning-centre-0)  
+[Summerside Library](https://www.princeedwardisland.ca/en/point-interest/summerside-rotary-library)  
 
 ## Academic/Career
 [Academic Support - Holland College](https://www.hollandcollege.com/admissions/academic-support.html)  
