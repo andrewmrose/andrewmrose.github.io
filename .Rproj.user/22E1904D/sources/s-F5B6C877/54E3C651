@@ -3,7 +3,7 @@
     "path": "~/Documents/GitHub/andrewmrose.github.io/about.Rmd",
     "project_path": "about.Rmd",
     "type": "r_markdown",
-    "hash": "2674040536",
+    "hash": "2549932994",
     "contents": "",
     "dirty": false,
     "created": 1657920142612.0,
@@ -12,18 +12,18 @@
     "properties": {
         "source_window_id": "",
         "Source": "Source",
-        "cursorPosition": "5,34",
+        "cursorPosition": "7,12",
         "scrollLine": "0",
         "rmdVisualMode": "false",
         "rmdVisualCollapsedChunks": "",
         "rmdVisualModeLocation": "2:0"
     },
     "folds": "",
-    "lastKnownWriteTime": 1658070189,
+    "lastKnownWriteTime": 1658079057,
     "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1658070189391,
+    "last_content_update": 1658079057611,
     "read_only": false,
     "read_only_alternatives": []
 }
