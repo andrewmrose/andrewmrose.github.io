@@ -1,6 +1,5 @@
 ---
 title: "Resources"
-date: '2022-07-15'
 ---
 
 ```{r setup, include=FALSE}
