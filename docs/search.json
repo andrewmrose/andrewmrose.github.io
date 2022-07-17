@@ -4,15 +4,15 @@
       "path": "about.html",
       "title": "About Me",
       "author": [],
-      "contents": "\nBiography\nI’m originally from a small town in Newfoundland, called Harbour Grace. Growing up I loved\nmath and science, so when I had the chance I decided to pursue those\nsubjects in university. For my BSc (Joint Hons) in Applied Math and\nPhysics, I completed research in numerical methods for adaptive mesh\ngeneration. This research was conducted under the supervision of\nDr. Ronald Haynes. Next, I completed my MSc in Math under the\nsupervision of Dr. Hari Kunduri. This research focused on theoretical\nblack holes and their geometry. My BEd in Intermediate/Secondary\nEducation was completed as I finished my MSc. This included a teaching\ninternship at Prince of Wales Collegiate in St. John’s, NL.\nIn my spare time I enjoy spending time outside. This includes\nrelaxing beach trips or day long hiking expeditions. Growing up in\nNewfoundland gives one ample opportunity to explore nature and I’m lucky\nto continue doing so on beautiful Prince Edward Island. I live in\nCharlottetown with my wife and our five pets (2 dogs and 3 cats).\n\n\n\n\n\n\n",
-      "last_modified": "2022-07-17T11:25:40-03:00"
+      "contents": "\nBiography\nI’m originally from a small town in Newfoundland, called Harbour Grace. Growing up I loved\nmath and science, so when I had the chance I decided to pursue those\nsubjects in university. For my BSc (Joint Hons) in Applied Math and\nPhysics, I completed research in numerical methods for adaptive mesh\ngeneration. This research was conducted under the supervision of\nDr. Ronald Haynes. Next, I completed my MSc in Math under the\nsupervision of Dr. Hari Kunduri. This research focused on theoretical\nblack holes and their geometry. My BEd in Intermediate/Secondary\nEducation was completed as I finished my MSc. This included a teaching\ninternship at Prince of Wales Collegiate in St. John’s, NL.\nIn my spare time I enjoy spending time outside. This includes\nrelaxing beach trips or day long hiking expeditions. Growing up in\nNewfoundland gives one ample opportunity to explore nature and I’m lucky\nto continue doing so on beautiful Prince Edward Island. I live in\nCharlottetown with my wife and our five pets (2 dogs and 3 cats).\n\n\npaths <- c(\"images/gm1.jpeg\",\"images/gm2.jpeg\",\"images/table1.jpeg\",\"images/pei1.jpeg\", \"images/pei2.jpeg\", \"images/Bo1.jpeg\")\ncaps <- c(\"Trail leading to the base of Gros Morne Mountatin, Gros Morne National Park, Newfoundland\", \"View from the way down Gros Morne Mountatin, Gros Morne National Park, Newfoundland\", \"View from the top of the Tablelands, Gros Morne National Park, Newfoundland\", \"Scenery between Cape Tryon Lighthouse and New London Lighthouse, Prince Edward Island\",\"Scenery between Cape Tryon Lighthouse and New London Lighthouse, Prince Edward Island\", \"One of my dogs enjoying a doggy sundae, Charlottetown, Prince Edward Island\")\npixture::pixgallery(paths, caption = caps)\n\n\n\n\n\n\n",
+      "last_modified": "2022-07-17T12:00:42-03:00"
     },
     {
       "path": "index.html",
       "title": "Andrew M Rose",
       "author": [],
       "contents": "\n\n          \n          \n          Andrew M Rose\n          \n          \n          \n          \n          \n          About\n          Teaching\n          \n          \n          Projects\n           \n          ▾\n          \n          \n          Professional\n          Personal\n          \n          \n          Resources\n          ☰\n          \n          \n      \n        \n          \n            \n              \n            \n              Andrew M Rose\n            \n            \n              \n                \n                    \n                      \n                        CV\n                      \n                    \n                  \n                                    \n                    \n                      \n                        Holland College\n                      \n                    \n                  \n                                    \n                    \n                      \n                        \n                      \n                    \n                  \n                                    \n                    \n                      \n                        \n                      \n                    \n                  \n                                  \n            \n          \n        \n        \n        \n          \n            \n            Hello | Bonjour | Kwe’\n            I’m Andrew Rose and I’m a Learning Manager of Math and\n            Physics at Holland College on Prince Edward Island. I teach\n            at both the Summerside\n            Harbourfront and Charlottetown,\n            Prince of Wales Campuses. Prior to joining Holland\n            College I worked with Health PEI as a Health Information\n            Specialist performing statistical analysis and data\n            visualization of data related to the province’s healthcare\n            services. As well, I was an Instructor at the College\n            of the North Atlantic in Carbonear, Newfoundland. There\n            I taught post-secondary mathematics within the CAS\n            Transfer Program. I hold a BSc (Joint Hons) in Applied\n            Math and Physics, an MSc in Math, and a BEd in\n            Intermediate/Secondary Education. Please take a look at my\n            CV for a more\n            detailed history.\n            This site is intended to be a home for course resources,\n            professional data projects, and personal projects which may\n            be data based or otherwise. Please feel free to contact me\n            regarding any errors to the website, or with any questions\n            for the published projects!\n            \n          \n        \n      \n    \n\n    \n      \n        \n          \n            \n              \n            \n              Andrew M Rose\n            \n            \n              \n                \n                                    \n                    \n                      CV\n                    \n                  \n                                    \n                    \n                      Holland College\n                    \n                  \n                                    \n                    \n                      \n                    \n                  \n                                    \n                    \n                      \n                    \n                  \n                                  \n              \n            \n            \n              \n              Hello | Bonjour | Kwe’\n              I’m Andrew Rose and I’m a Learning Manager of Math and\n              Physics at Holland College on Prince Edward Island. I\n              teach at both the Summerside\n              Harbourfront and Charlottetown,\n              Prince of Wales Campuses. Prior to joining Holland\n              College I worked with Health PEI as a Health Information\n              Specialist performing statistical analysis and data\n              visualization of data related to the province’s healthcare\n              services. As well, I was an Instructor at the College\n              of the North Atlantic in Carbonear, Newfoundland.\n              There I taught post-secondary mathematics within the CAS\n              Transfer Program. I hold a BSc (Joint Hons) in Applied\n              Math and Physics, an MSc in Math, and a BEd in\n              Intermediate/Secondary Education. Please take a look at my\n              CV for a more\n              detailed history.\n              This site is intended to be a home for course\n              resources, professional data projects, and personal\n              projects which may be data based or otherwise. Please feel\n              free to contact me regarding any errors to the website, or\n              with any questions for the published projects!\n              \n            \n        \n      \n    \n\n    \n    \n    ",
-      "last_modified": "2022-07-17T11:25:40-03:00"
+      "last_modified": "2022-07-17T12:00:42-03:00"
     },
     {
       "path": "personal.html",
@@ -20,7 +20,7 @@
       "author": [],
       "date": "2022-07-15",
       "contents": "\n\n\n\n",
-      "last_modified": "2022-07-17T11:25:41-03:00"
+      "last_modified": "2022-07-17T12:00:42-03:00"
     },
     {
       "path": "professional.html",
@@ -28,7 +28,7 @@
       "author": [],
       "date": "2022-07-15",
       "contents": "\n\n\n\n",
-      "last_modified": "2022-07-17T11:25:41-03:00"
+      "last_modified": "2022-07-17T12:00:43-03:00"
     },
     {
       "path": "projects.html",
@@ -36,7 +36,7 @@
       "author": [],
       "date": "2022-07-15",
       "contents": "\nA directory for personal and professional projects.\n\n\n\n",
-      "last_modified": "2022-07-17T11:25:42-03:00"
+      "last_modified": "2022-07-17T12:00:43-03:00"
     },
     {
       "path": "resources.html",
@@ -44,15 +44,14 @@
       "author": [],
       "date": "2022-07-15",
       "contents": "\n\n\n\n",
-      "last_modified": "2022-07-17T11:25:42-03:00"
+      "last_modified": "2022-07-17T12:00:43-03:00"
     },
     {
       "path": "teaching.html",
       "title": "Teaching History",
       "author": [],
-      "date": "2022-07-15",
       "contents": "\nHolland College\n2022-2023\nCollege of the North\nAtlantic\n2020-2021\nMath 1104 - Algebra and Trigonometry\nMath 1120 - Finite Math I\nMath 1121 - Finite Math II\nMath 1130 - Calculus I\nMath 1131 - Calculus II\n2019-2020\nMath 1104 - Algebra and Trigonometry\nMath 1120 - Finite Math I\nMath 1121 - Finite Math II\nMath 1130 - Calculus I\nMath 1131 - Calculus II\n\n\n\n",
-      "last_modified": "2022-07-17T11:25:43-03:00"
+      "last_modified": "2022-07-17T12:00:43-03:00"
     }
   ],
   "collections": []
