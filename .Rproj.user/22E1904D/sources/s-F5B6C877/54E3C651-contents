@@ -12,7 +12,7 @@ I'm originally from a small town in Newfoundland, called [Harbour Grace](https:/
 In my spare time I enjoy spending time outside. This includes relaxing beach trips or day long hiking expeditions. Growing up in Newfoundland gives one ample opportunity to explore nature and I'm lucky to continue doing so on beautiful Prince Edward Island. I live in Charlottetown with my wife and our five pets (2 dogs and 3 cats).
 
 ```{r}
-paths <- c("images/gm1.jpeg","images/gm2.jpeg","images/table1.jpeg","images/pei1.jpeg", "images/pei2.jpeg", "images/bo1.jpeg")
+paths <- c("images/gm1.jpeg","images/gm2.jpeg","images/table1.jpeg","images/pei1.jpeg", "images/pei2.jpeg", "images/Bo1.jpeg")
 caps <- c("Trail leading to the base of Gros Morne Mountatin, Gros Morne National Park, Newfoundland", "View from the way down Gros Morne Mountatin, Gros Morne National Park, Newfoundland", "View from the top of the Tablelands, Gros Morne National Park, Newfoundland", "Scenery between Cape Tryon Lighthouse and New London Lighthouse, Prince Edward Island","Scenery between Cape Tryon Lighthouse and New London Lighthouse, Prince Edward Island", "One of my dogs enjoying a doggy sundae, Charlottetown, Prince Edward Island")
 pixture::pixgallery(paths, caption = caps)
 ```
