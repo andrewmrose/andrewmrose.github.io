@@ -1,9 +1,0 @@
----
-title: "Projects"
-date: '2022-07-15'
----
-
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
-```
-A directory for personal and professional projects.
