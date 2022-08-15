@@ -8,10 +8,12 @@ knitr::opts_chunk$set(echo = FALSE)
 ## Contact
 | | |
 |--- | --- | 
-|**Email**:|hello (at) andrewmrose (dot) ca|
-|**Address**: |TBD|
-|**Office**:|TBD|
-|**Phone**:|TBD|
+|**Email**:|amrose (at) hollandcollege (dot) com|
+|**Address**: |Waterfront Campus, 98 Water Street, Summerside, PE|
+| |Prince of Wales Campus, 140 Weymouth Street, Charlottetown, PE|
+|**Office**:|227 WFC|
+| |??? PWC|
+|**Phone**:|902-888-6748|
 
 
 
