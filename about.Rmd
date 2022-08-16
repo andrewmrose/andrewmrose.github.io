@@ -10,9 +10,9 @@ knitr::opts_chunk$set(echo = FALSE)
 |--- | --- | 
 |**Email**:|amrose (at) hollandcollege (dot) com|
 |**Address**: |Waterfront Campus, 98 Water Street, Summerside, PE|
-| |Prince of Wales Campus, 140 Weymouth Street, Charlottetown, PE|
+| |Prince of Wales Campus, 300 Kent Street, Charlottetown, PE|
 |**Office**:|227 WFC|
-| |??? PWC|
+| |308 PWC|
 |**Phone**:|902-888-6748|
 
 
