@@ -1,18 +1,15 @@
 ---
 title: "Andrew M Rose"
-image: "images/meheadshot.jpeg"
+image: "images/me.jpeg"
 links:
   - label: '[`r fontawesome::fa("file")` **CV**](content/AndrewRoseResume.pdf)'
   - label: '[`r fontawesome::fa("user-graduate")` **Holland College**](https://www.hollandcollege.com)'
   - label: '[`r fontawesome::fa("github")`](https://github.com/andrewmrose)'
   - label: '[`r fontawesome::fa("at")`](mailto:amrose@hollandcollege.com)'
-
+output:
+  postcards::jolla
 site: distill::distill_website
-
-  
-#output: postcards::solana
 ---
-
 
 
 ```{r setup, include=FALSE}
