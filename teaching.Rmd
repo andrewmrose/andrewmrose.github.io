@@ -7,6 +7,11 @@ knitr::opts_chunk$set(echo = TRUE)
 ```
 ## Holland College 
 ### 2022-2023
+Physics 1000 - Physics  
+Math 1005 - Math Essentials  
+Math 1060 - Electrical Trade Math I  
+Math 1100 - Technical Mathematics I  
+
 ## College of the North Atlantic
 ### 2020-2021
 Math 1104 - Algebra and Trigonometry  
