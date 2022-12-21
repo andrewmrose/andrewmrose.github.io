@@ -9,8 +9,11 @@ knitr::opts_chunk$set(echo = TRUE)
 ### 2022-2023
 Physics 1000 - Physics  
 Math 1005 - Math Essentials  
+Math 1015 - Math for Carpenters  
 Math 1060 - Electrical Trade Math I  
 Math 1100 - Technical Mathematics I  
+Math 1160 - Electrical Trade Math II  
+Math 1170 - Technical Mathematics II 
 
 ## College of the North Atlantic
 ### 2020-2021

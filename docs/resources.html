@@ -785,6 +785,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   d-article table.gt_table td,
   d-article table.gt_table th {
     border-bottom: none;
+    font-size: 100%;
   }
 
   .html-widget {
@@ -1857,15 +1858,21 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
       // hoverable references
       $('span.citation[data-cites]').each(function() {
-        if ($(this).children()[0].nodeName == "D-FOOTNOTE") {
-          var fn = $(this).children()[0]
+        const citeChild = $(this).children()[0]
+        // Do not process if @xyz has been used without escaping and without bibliography activated
+        // https://github.com/rstudio/distill/issues/466
+        if (citeChild === undefined) return true
+
+        if (citeChild.nodeName == "D-FOOTNOTE") {
+          var fn = citeChild
           $(this).html(fn.shadowRoot.querySelector("sup"))
           $(this).id = fn.id
           fn.remove()
         }
         var refs = $(this).attr('data-cites').split(" ");
         var refHtml = refs.map(function(ref) {
-          return "<p>" + $('#ref-' + ref).html() + "</p>";
+          // Could use CSS.escape too here, we insure backward compatibility in navigator
+          return "<p>" + $('div[id="ref-' + ref + '"]').html() + "</p>";
         }).join("\n");
         window.tippy(this, {
           allowHTML: true,
@@ -2064,7 +2071,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   </script>
 
   <!--/radix_placeholder_distill-->
-  <script src="site_libs/header-attrs-2.16/header-attrs.js"></script>
+  <script src="site_libs/header-attrs-2.19/header-attrs.js"></script>
   <script src="site_libs/popper-2.6.0/popper.min.js"></script>
   <link href="site_libs/tippy-6.2.7/tippy.css" rel="stylesheet" />
   <link href="site_libs/tippy-6.2.7/tippy-light-border.css" rel="stylesheet" />
@@ -2131,93 +2138,49 @@ Projects
 <div class="d-article">
 <h2 id="community">Community</h2>
 <p><a href="https://www.pridepei.ca/">Pride PEI</a><br />
-<a
-href="https://www.princeedwardisland.ca/en/information/health-pei/mental-health-services">Mental
-Health Services</a><br />
+<a href="https://www.princeedwardisland.ca/en/information/health-pei/mental-health-services">Mental Health Services</a><br />
 <a href="http://ncpei.com/">Native Council of PEI</a><br />
 <a href="https://peifah.ca/">PEI Fight for Affordable Housing</a><br />
 <a href="https://www.peitn.com/home">PEI Transgender Network</a><br />
-<a href="https://www.irsapei.ca/en/home">Immigrant &amp; Refugee
-Services Association PEI</a><br />
+<a href="https://www.irsapei.ca/en/home">Immigrant &amp; Refugee Services Association PEI</a><br />
 <a href="https://www.peersalliance.ca/">PEERS Alliance</a><br />
 <a href="http://www.foodexchangepei.com/">PEI Food Exchange</a><br />
-<a href="https://www.peirsac.org/what-we-do">PEI Rape and Sexual Assault
-Centre</a><br />
-<a href="https://www.fvps.ca/">PEI Family Violence Prevention
-Services</a><br />
+<a href="https://www.peirsac.org/what-we-do">PEI Rape and Sexual Assault Centre</a><br />
+<a href="https://www.fvps.ca/">PEI Family Violence Prevention Services</a><br />
 <a href="https://www.fvps.ca/anderson-house/">Anderson House</a><br />
-<a href="http://cmbmws.ca/get-help/">Chief Mary Bernard Memorial Women’s
-Shelter</a><br />
+<a href="http://cmbmws.ca/get-help/">Chief Mary Bernard Memorial Women’s Shelter</a><br />
 <a href="https://bloominghouse.ca/">Blooming House</a><br />
 <a href="https://www.bipocushr.org/">BIPOC USHR PEI</a><br />
-<a href="https://www.peihumanrights.ca/">PEI Human Rights
-Commission</a><br />
-<a href="https://www.urhm.org/">Upper Room Hospitality
-Ministry</a><br />
-<a href="https://linktr.ee/peicommunityfridge">PEI Community
-Fridge</a><br />
-<a href="https://vrcpei.org/meals-on-wheels/">Meals on Wheels
-PEI</a><br />
-<a
-href="https://pei.bridgethegapp.ca/adult/service-directory/deacon-house/">Deacon
-House</a><br />
-<a
-href="https://pei.bridgethegapp.ca/service-directory/service_directory_tag/housing-emergency-shelter/">Emergency
-Housing Services</a><br />
+<a href="https://www.peihumanrights.ca/">PEI Human Rights Commission</a><br />
+<a href="https://www.urhm.org/">Upper Room Hospitality Ministry</a><br />
+<a href="https://linktr.ee/peicommunityfridge">PEI Community Fridge</a><br />
+<a href="https://vrcpei.org/meals-on-wheels/">Meals on Wheels PEI</a><br />
+<a href="https://pei.bridgethegapp.ca/adult/service-directory/deacon-house/">Deacon House</a><br />
+<a href="https://pei.bridgethegapp.ca/service-directory/service_directory_tag/housing-emergency-shelter/">Emergency Housing Services</a><br />
 <a href="https://transitpei.ca/">Transit PEI</a><br />
 <a href="https://www.t3transit.ca/">T3 Transit</a><br />
 <a href="https://www.charlottetown.ca/">City of Charlottetown</a><br />
 <a href="https://www.summerside.ca/">City of Summerside</a><br />
-<a
-href="https://www.princeedwardisland.ca/en/point-interest/charlottetown-library-learning-centre-0">Charlottetown
-Library</a><br />
-<a
-href="https://www.princeedwardisland.ca/en/point-interest/summerside-rotary-library">Summerside
-Library</a></p>
+<a href="https://www.princeedwardisland.ca/en/point-interest/charlottetown-library-learning-centre-0">Charlottetown Library</a><br />
+<a href="https://www.princeedwardisland.ca/en/point-interest/summerside-rotary-library">Summerside Library</a></p>
 <h2 id="academiccareer">Academic/Career</h2>
-<p><a
-href="https://www.hollandcollege.com/admissions/academic-support.html">Academic
-Support - Holland College</a><br />
-<a
-href="https://www.hollandcollege.com/campus-life/office-of-retention-part-time-study-and-career-services.html">Office
-of Retention, Part-Time Study &amp; Career Services - Holland
-College</a><br />
-<a
-href="https://www.hollandcollege.com/campus-life/living-in-residence.html">Residence
-Services - Holland College</a><br />
-<a
-href="https://www.hollandcollege.com/campus-life/living-off-campus.html">Off
-Campus Housing - Holland College</a><br />
-<a
-href="https://www.hollandcollege.com/admissions/2022-2023-calendar.html">Academic
-Calendar - Holland College</a><br />
-<a href="https://hollandcollege.libguides.com/c.php?g=715197">Library
-Services - Holland College</a><br />
-<a href="https://www.hollandcollege.com/admissions/money-matters/">Money
-Matters - Holland College</a><br />
-<a
-href="https://www.hollandcollege.com/admissions/money-matters/financial-aid.html">Financial
-Aid - Holland College</a><br />
-<a href="https://www.hollandcollege.com/jobs.html">Student Jobs -
-Holland College</a><br />
-<a
-href="https://www.hollandcollege.com/campus-life/health-clinics.html">Health
-Clinics - Holland College</a><br />
-<a
-href="https://www.hollandcollege.com/campus-life/health-services.html">Health
-Services - Holland College</a><br />
-<a
-href="https://www.hollandcollege.com/campus-life/counselling-services.html">Counselling
-Services - Holland College</a><br />
+<p><a href="https://www.hollandcollege.com/admissions/academic-support.html">Academic Support - Holland College</a><br />
+<a href="https://www.hollandcollege.com/campus-life/office-of-retention-part-time-study-and-career-services.html">Office of Retention, Part-Time Study &amp; Career Services - Holland College</a><br />
+<a href="https://www.hollandcollege.com/campus-life/living-in-residence.html">Residence Services - Holland College</a><br />
+<a href="https://www.hollandcollege.com/campus-life/living-off-campus.html">Off Campus Housing - Holland College</a><br />
+<a href="https://www.hollandcollege.com/admissions/2022-2023-calendar.html">Academic Calendar - Holland College</a><br />
+<a href="https://hollandcollege.libguides.com/c.php?g=715197">Library Services - Holland College</a><br />
+<a href="https://www.hollandcollege.com/admissions/money-matters/">Money Matters - Holland College</a><br />
+<a href="https://www.hollandcollege.com/admissions/money-matters/financial-aid.html">Financial Aid - Holland College</a><br />
+<a href="https://www.hollandcollege.com/jobs.html">Student Jobs - Holland College</a><br />
+<a href="https://www.hollandcollege.com/campus-life/health-clinics.html">Health Clinics - Holland College</a><br />
+<a href="https://www.hollandcollege.com/campus-life/health-services.html">Health Services - Holland College</a><br />
+<a href="https://www.hollandcollege.com/campus-life/counselling-services.html">Counselling Services - Holland College</a><br />
 <a href="https://openstax.org/">OpenStax</a><br />
-<a href="https://aimath.org/textbooks/approved-textbooks/">American
-Institute of Mathematics - Open Textbook Initiative</a><br />
-<a href="https://math.libretexts.org/Bookshelves">LibreText -
-Math</a><br />
-<a href="https://phys.libretexts.org/Bookshelves">LibreText -
-Physics</a></p>
-<div class="sourceCode" id="cb1"><pre
-class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
+<a href="https://aimath.org/textbooks/approved-textbooks/">American Institute of Mathematics - Open Textbook Initiative</a><br />
+<a href="https://math.libretexts.org/Bookshelves">LibreText - Math</a><br />
+<a href="https://phys.libretexts.org/Bookshelves">LibreText - Physics</a></p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->
 </div>
