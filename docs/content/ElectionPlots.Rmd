@@ -1,0 +1,139 @@
+---
+title: "PEI Municpal Election Data \n 2014 to 2022"
+author: "Andrew Rose"
+date: "2023-02-06"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(ggplot2)
+library(tidyr)
+library(stringr)
+library(trelliscopejs)
+```
+
+## Results {.tabset}
+
+
+### 2022 Summerside
+
+```{r, echo=FALSE}
+names <- c("Mayor - Dan Kutcher\n", "Ward 01 - Bruce MacDougall\n(Acclaimed)\n", "Ward 02 - Justin Doiron\n(Acclaimed)\n", "Ward 03 - Barb Ramsay\n(Acclaimed)\n", "Ward 04 - Cory Snow\n(Acclaimed)\n", "Ward 05 - Barb Gallant\n", "Ward 06 - Norma McColeman\n", "Ward 07 - Rick Morrison\n", "Ward 08 - Carrie Adams\n(Acclaimed)\n")
+elected_votes <- c(3390,NA,NA,NA,NA, 261, 357, 498, NA)
+other_votes <- c(2133, NA,NA,NA,NA, 415, 260,306,NA)
+rejected <- c(12,NA,NA,NA,NA, 6,7,3,NA)
+electors<- c(10834,1437,1488,1424,1076,1438,1185,1388,1398)
+voted <-elected_votes
+oth<-rejected+other_votes
+voted[is.na(voted)] <- 0
+oth[is.na(oth)] <- 0
+no_vote <-electors-(voted+oth)
+For <- as.numeric(format(round(100*voted/electors, 1), nsmall = 1))
+Other <- as.numeric(format(round(100*oth/electors, 1), nsmall = 1))
+Didnt<-as.numeric(format(round(100*no_vote/electors, 1), nsmall = 1))
+df<-data.frame(names, For, Other, Didnt)
+df_more<-data.frame(names, elected_votes, other_votes, rejected, voted, For, no_vote, Other,oth, Didnt, electors)
+
+df$names <- paste(as.character(names),'Total Electors = ',as.character(electors), sep=" ")
+df_longer <-  df%>% pivot_longer(!names, names_to = "vote", values_to = "count")
+df_longer$vote <- str_replace(df_longer$vote, "Didnt", "Didn't\n Vote")
+df_longer$vote <- str_replace(df_longer$vote, "For", "Voted\n For")
+df_longer$vote <- str_replace(df_longer$vote, "Other", "Other\n Candidates")
+
+df_longer$new <- factor(df_longer$vote, levels=c("Voted\n For","Other\n Candidates","Didn't\n Vote"), labels=c("Voted\n For","Other\n Candidates","Didn't\n Vote")) 
+
+ggplot(df_longer, aes(y=count,x = new, fill = vote)) + geom_bar(position="dodge", stat="identity")+labs(title = "2022 Summerside Municipal Election Results",x = "Vote Given", y = "Percentage of Votes Cast") + geom_text(aes(label = count, y = count+5), size = 3)+ scale_fill_manual(values=c("#F8766D", "#609DFF", "#00BA39")) +theme(legend.position="none")+ facet_wrap(~names, nrow=3)
+```
+
+### 2022 Charlottetown
+
+```{r, echo=FALSE}
+names <- c("Mayor - Phillip Brown\n", "Ward 01 - Alanna Jankov\n", "Ward 02 - Justin Muttart\n", "Ward 03 - Norman Beck\n", "Ward 04 - Mitchell Tweel\n", "Ward 05 - Kevin Ramsay\n", "Ward 06 - Bob Doiron\n", "Ward 07 - John McAleer\n", "Ward 08 - Trevor MacKinnon\n", "Ward 09 - Julie McCabe\n", "Ward 10 - Terry Bernard\n(Acclaimed)\n")
+elected_votes <- c(5262, 547, 476, 896, 706, 317, 837, 640, 562, 781, NA)
+other_votes <- c(5993, 538, 595, 549, 615, 591, 378, 530, 677, 209, NA)
+rejected <- c(143,14,10,7,10,2,9,5,16,6,NA)
+electors<- c(24323,2434,2262,2437,2681,2177,2305,2398,2682,2563,2384)
+voted <-elected_votes
+oth<-rejected+other_votes
+voted[is.na(voted)] <- 0
+oth[is.na(oth)] <- 0
+no_vote <-electors-(voted+oth)
+For <- as.numeric(format(round(100*voted/electors, 1), nsmall = 1))
+Other <- as.numeric(format(round(100*oth/electors, 1), nsmall = 1))
+Didnt<-as.numeric(format(round(100*no_vote/electors, 1), nsmall = 1))
+df<-data.frame(names, For, Other, Didnt)
+df_more<-data.frame(names, elected_votes, other_votes, rejected, voted, For, no_vote, Other,oth, Didnt, electors)
+
+df$names <- paste(as.character(names),'Total Electors = ',as.character(electors), sep=" ")
+df_longer <-  df%>% pivot_longer(!names, names_to = "vote", values_to = "count")
+df_longer$vote <- str_replace(df_longer$vote, "Didnt", "Didn't\n Vote")
+df_longer$vote <- str_replace(df_longer$vote, "For", "Voted\n For")
+df_longer$vote <- str_replace(df_longer$vote, "Other", "Other\n Candidates")
+
+df_longer$new <- factor(df_longer$vote, levels=c("Voted\n For","Other\n Candidates","Didn't\n Vote"), labels=c("Voted\n For","Other\n Candidates","Didn't\n Vote")) 
+
+ggplot(df_longer, aes(y=count,x = new, fill = vote)) + geom_bar(position="dodge", stat="identity")+labs(title = "2022 Charlottetown Municipal Election Results", x = "Vote Given", y = "Percentage of Votes Cast") + geom_text(aes(label = count, y = count+5), size = 3)+ scale_fill_manual(values=c("#F8766D", "#609DFF", "#00BA39")) +theme(legend.position="none")+ facet_wrap(~names, nrow=3)
+```
+
+
+
+### 2018 Charlottetown
+
+```{r, echo=FALSE}
+names <- c("Mayor - Phillip Brown\n", "Ward 01 - Alanna Jankov\n", "Ward 02 - Terry MacLeod\n", "Ward 03 - Mike Duffy\n", "Ward 04 - Mitchell Tweel\n", "Ward 05 - Kevin Ramsay\n", "Ward 06 - Bob Doiron\n", "Ward 07 - Greg Rivard\n(Acclaimed)\n", "Ward 08 - Jason Coady\n", "Ward 09 - Julie McCabe\n", "Ward 10 - Terry Bernard\n")
+elected_votes <- c(6136,516,686,648,924,603,588,NA,1000,1092,883)
+other_votes <- c(8427,950,610,1077,717,630,1024,NA,517,349,479)
+rejected <- c(0,0,0,0,0,0,0,0,0,0,0)
+electors<- c(25077,2593,2323,2564,2715,2343,2442,2459,2579,2596,2463)
+voted <-elected_votes
+oth<-rejected+other_votes
+voted[is.na(voted)] <- 0
+oth[is.na(oth)] <- 0
+no_vote <-electors-(voted+oth)
+For <- as.numeric(format(round(100*voted/electors, 1), nsmall = 1))
+Other <- as.numeric(format(round(100*oth/electors, 1), nsmall = 1))
+Didnt<-as.numeric(format(round(100*no_vote/electors, 1), nsmall = 1))
+df<-data.frame(names, For, Other, Didnt)
+df_more<-data.frame(names, elected_votes, other_votes, rejected, voted, For, no_vote, Other,oth, Didnt, electors)
+
+df$names <- paste(as.character(names),'Total Electors = ',as.character(electors), sep=" ")
+df_longer <-  df%>% pivot_longer(!names, names_to = "vote", values_to = "count")
+df_longer$vote <- str_replace(df_longer$vote, "Didnt", "Didn't\n Vote")
+df_longer$vote <- str_replace(df_longer$vote, "For", "Voted\n For")
+df_longer$vote <- str_replace(df_longer$vote, "Other", "Other\n Candidates")
+
+df_longer$new <- factor(df_longer$vote, levels=c("Voted\n For","Other\n Candidates","Didn't\n Vote"), labels=c("Voted\n For","Other\n Candidates","Didn't\n Vote")) 
+
+ggplot(df_longer, aes(y=count,x = new, fill = vote)) + geom_bar(position="dodge", stat="identity")+labs(title = "2018 Charlottetown Municipal Election Results", x = "Vote Given", y = "Percentage of Votes Cast") + geom_text(aes(label = count, y = count+5), size = 3)+ scale_fill_manual(values=c("#F8766D", "#609DFF", "#00BA39")) +theme(legend.position="none")+ facet_wrap(~names, nrow=3)
+```
+
+### 2014 Charlottetown
+
+```{r, echo=FALSE}
+names <- c("Mayor - Clifford Lee\n", "Ward 01 - Eddie Rice\n", "Ward 02 - Terry MacLeod\n", "Ward 03 - Mike Duffy\n", "Ward 04 - Mitchell Tweel\n", "Ward 05 - Kevin Ramsay\n", "Ward 06 - Bob Doiron\n", "Ward 07 - Greg Rivard\n", "Ward 08 - Jason Coady\n(Acclaimed)\n", "Ward 09 - Melissa Hilton\n", "Ward 10 - Terry Bernard\n")
+elected_votes <- c(7695,512,469,472,747,703,744,870,NA,742,1003)
+other_votes <- c(5690,503,703,1062,438,488,623,640,NA,916,224)
+rejected <- c(143,14,10,7,10,2,9,5,16,6,0)
+electors<- c(23038,1928,2066,2215,1904,2133,2138,2738,2680,2856,2335)
+voted <-elected_votes
+oth<-rejected+other_votes
+voted[is.na(voted)] <- 0
+oth[is.na(oth)] <- 0
+no_vote <-electors-(voted+oth)
+For <- as.numeric(format(round(100*voted/electors, 1), nsmall = 1))
+Other <- as.numeric(format(round(100*oth/electors, 1), nsmall = 1))
+Didnt<-as.numeric(format(round(100*no_vote/electors, 1), nsmall = 1))
+df<-data.frame(names, For, Other, Didnt)
+df_more<-data.frame(names, elected_votes, other_votes, rejected, voted, For, no_vote, Other,oth, Didnt, electors)
+
+df$names <- paste(as.character(names),'Total Electors = ',as.character(electors), sep=" ")
+df_longer <-  df%>% pivot_longer(!names, names_to = "vote", values_to = "count")
+df_longer$vote <- str_replace(df_longer$vote, "Didnt", "Didn't\n Vote")
+df_longer$vote <- str_replace(df_longer$vote, "For", "Voted\n For")
+df_longer$vote <- str_replace(df_longer$vote, "Other", "Other\n Candidates")
+
+df_longer$new <- factor(df_longer$vote, levels=c("Voted\n For","Other\n Candidates","Didn't\n Vote"), labels=c("Voted\n For","Other\n Candidates","Didn't\n Vote")) 
+
+ggplot(df_longer, aes(y=count,x = new, fill = vote)) + geom_bar(position="dodge", stat="identity")+labs(title = "2014 Charlottetown Municipal Election Results", x = "Vote Given", y = "Percentage of Votes Cast") + geom_text(aes(label = count, y = count+5), size = 3)+ scale_fill_manual(values=c("#F8766D", "#609DFF", "#00BA39")) +theme(legend.position="none")+ facet_wrap(~names, nrow=3)
+```
