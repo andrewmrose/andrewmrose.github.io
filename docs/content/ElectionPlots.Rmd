@@ -43,7 +43,7 @@ df_longer$vote <- str_replace(df_longer$vote, "Other", "Other\n Candidates")
 
 df_longer$new <- factor(df_longer$vote, levels=c("Voted\n For","Other\n Candidates","Didn't\n Vote"), labels=c("Voted\n For","Other\n Candidates","Didn't\n Vote")) 
 
-ggplot(df_longer, aes(y=count,x = new, fill = vote)) + geom_bar(position="dodge", stat="identity")+labs(title = "2022 Summerside Municipal Election Results",x = "Vote Given", y = "Percentage of Votes Cast") + geom_text(aes(label = count, y = count+5), size = 3)+ scale_fill_manual(values=c("#F8766D", "#609DFF", "#00BA39")) +theme(legend.position="none")+ facet_wrap(~names, nrow=3)
+ggplot(df_longer, aes(y=count,x = new, fill = vote)) + geom_bar(position="dodge", stat="identity")+labs(title = "2022 Summerside Municipal Election Results",x = "Vote Given", y = "Percentage of Votes Cast") + geom_text(aes(label = count, y = count+5), size = 3)+scale_fill_manual(values=c("grey", "pink", "yellow")) +theme(legend.position="none")+ facet_wrap(~names, nrow=3)
 ```
 
 ### 2022 Charlottetown
@@ -73,7 +73,7 @@ df_longer$vote <- str_replace(df_longer$vote, "Other", "Other\n Candidates")
 
 df_longer$new <- factor(df_longer$vote, levels=c("Voted\n For","Other\n Candidates","Didn't\n Vote"), labels=c("Voted\n For","Other\n Candidates","Didn't\n Vote")) 
 
-ggplot(df_longer, aes(y=count,x = new, fill = vote)) + geom_bar(position="dodge", stat="identity")+labs(title = "2022 Charlottetown Municipal Election Results", x = "Vote Given", y = "Percentage of Votes Cast") + geom_text(aes(label = count, y = count+5), size = 3)+ scale_fill_manual(values=c("#F8766D", "#609DFF", "#00BA39")) +theme(legend.position="none")+ facet_wrap(~names, nrow=3)
+ggplot(df_longer, aes(y=count,x = new, fill = vote)) + geom_bar(position="dodge", stat="identity")+labs(title = "2022 Charlottetown Municipal Election Results", x = "Vote Given", y = "Percentage of Votes Cast") + geom_text(aes(label = count, y = count+5), size = 3)+scale_fill_manual(values=c("grey", "pink", "yellow")) +theme(legend.position="none")+ facet_wrap(~names, nrow=3)
 ```
 
 
@@ -105,7 +105,7 @@ df_longer$vote <- str_replace(df_longer$vote, "Other", "Other\n Candidates")
 
 df_longer$new <- factor(df_longer$vote, levels=c("Voted\n For","Other\n Candidates","Didn't\n Vote"), labels=c("Voted\n For","Other\n Candidates","Didn't\n Vote")) 
 
-ggplot(df_longer, aes(y=count,x = new, fill = vote)) + geom_bar(position="dodge", stat="identity")+labs(title = "2018 Charlottetown Municipal Election Results", x = "Vote Given", y = "Percentage of Votes Cast") + geom_text(aes(label = count, y = count+5), size = 3)+ scale_fill_manual(values=c("#F8766D", "#609DFF", "#00BA39")) +theme(legend.position="none")+ facet_wrap(~names, nrow=3)
+ggplot(df_longer, aes(y=count,x = new, fill = vote)) + geom_bar(position="dodge", stat="identity")+labs(title = "2018 Charlottetown Municipal Election Results", x = "Vote Given", y = "Percentage of Votes Cast") + geom_text(aes(label = count, y = count+5), size = 3)+scale_fill_manual(values=c("grey", "pink", "yellow")) +theme(legend.position="none")+ facet_wrap(~names, nrow=3)
 ```
 
 ### 2014 Charlottetown
@@ -135,5 +135,5 @@ df_longer$vote <- str_replace(df_longer$vote, "Other", "Other\n Candidates")
 
 df_longer$new <- factor(df_longer$vote, levels=c("Voted\n For","Other\n Candidates","Didn't\n Vote"), labels=c("Voted\n For","Other\n Candidates","Didn't\n Vote")) 
 
-ggplot(df_longer, aes(y=count,x = new, fill = vote)) + geom_bar(position="dodge", stat="identity")+labs(title = "2014 Charlottetown Municipal Election Results", x = "Vote Given", y = "Percentage of Votes Cast") + geom_text(aes(label = count, y = count+5), size = 3)+ scale_fill_manual(values=c("#F8766D", "#609DFF", "#00BA39")) +theme(legend.position="none")+ facet_wrap(~names, nrow=3)
+ggplot(df_longer, aes(y=count,x = new, fill = vote)) + geom_bar(position="dodge", stat="identity")+labs(title = "2014 Charlottetown Municipal Election Results", x = "Vote Given", y = "Percentage of Votes Cast") + geom_text(aes(label = count, y = count+5), size = 3)+ scale_fill_manual(values=c("grey", "pink", "yellow")) +theme(legend.position="none")+ facet_wrap(~names, nrow=3)
 ```
