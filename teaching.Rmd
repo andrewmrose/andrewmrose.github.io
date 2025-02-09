@@ -6,7 +6,7 @@ title: "Teaching History"
 knitr::opts_chunk$set(echo = TRUE)
 ```
 ## Holland College 
-### 2022-2023
+### 2022-2025
 Physics 1000 - Physics  
 Math 1005 - Math Essentials  
 Math 1015 - Math for Carpenters  
