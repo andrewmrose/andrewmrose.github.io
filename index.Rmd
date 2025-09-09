@@ -25,7 +25,7 @@ knitr::opts_chunk$set(echo = FALSE)
 
 ## Hello | Bonjour | Kwe' {#pt}
 
-I'm Andrew Rose and I'm a Learning Manager of Mathematics and Physics at Holland College on Prince Edward Island. I teach at both the [Summerside Harbourfront](https://www.hollandcollege.com/about/campuses-and-centres/summerside-waterfront-campus.html) and [Charlottetown, Prince of Wales](https://www.hollandcollege.com/about/campuses-and-centres/pwc/index.html) Campuses. 
+I'm Andrew Rose and I'm a Learning Manager of Mathematics and Physics at Holland College on Prince Edward Island. I teach at the [Summerside Harbourfront](https://www.hollandcollege.com/about/campuses-and-centres/summerside-waterfront-campus.html) Campus. 
 
 Prior to joining Holland College I worked with Health PEI as a Health Information Specialist performing statistical analysis and data visualization of data related to the province's healthcare services. As well, I was an Instructor at the [College of the North Atlantic in Carbonear, Newfoundland](https://www.cna.nl.ca/Explore-Our-Campuses/Carbonear.aspx). There I taught post-secondary mathematics within the [CAS Transfer Program](https://www.cna.nl.ca/program/cas-transfer-college-university#). I hold a BSc (Joint Hons) in Applied Math and Physics, an MSc in Math, and a BEd in Intermediate/Secondary Education. Check out my [CV](content/AndrewRoseResume.pdf) for a more detailed history.
 
