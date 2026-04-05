@@ -10,7 +10,7 @@ knitr::opts_chunk$set(echo = FALSE)
 - **Email:** amrose (at) hollandcollege (dot) com  
 - **Phone:** [902-888-6748](tel:+19028886748)  
 - **Address:** Waterfront Campus, 98 Water Street, Summerside, PE  
-- **Office:** 227 (WFC); 308 (PWC)
+- **Office:** 57 (WFC)
 
 
 
