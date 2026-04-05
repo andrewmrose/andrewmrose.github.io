@@ -4,6 +4,7 @@ date: '2022-07-15'
 ---
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
+knitr::opts_chunk$set(echo = FALSE)
 ```
-A directory for personal and professional projects.
+
+Use the menu above to browse **Professional** and **Personal** project pages. Course materials and handouts will appear here over time as they are published.

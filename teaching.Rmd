@@ -3,7 +3,7 @@ title: "Teaching History"
 ---
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
+knitr::opts_chunk$set(echo = FALSE)
 ```
 ## Holland College 
 ### 2022-2026

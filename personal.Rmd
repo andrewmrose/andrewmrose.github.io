@@ -4,8 +4,8 @@ date: '2022-07-15'
 ---
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
+knitr::opts_chunk$set(echo = FALSE)
 ```
 
-[My RPubs Directory](https://rpubs.com/andrewmrose/ "RPubs")  
-[A summary of PEI Municipal Election Data from 2014 to 2022](content/ElectionPlots.html "Elections Data") 
+- [RPubs collection](https://rpubs.com/andrewmrose/) — notebooks and experiments  
+- [PEI municipal election data, 2014–2022](content/ElectionPlots.html) — interactive summary 

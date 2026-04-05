@@ -2,3 +2,10 @@
 .Rhistory
 .RData
 .Ruserdata
+
+.DS_Store
+**/.DS_Store
+
+# macOS duplicate filenames (e.g. "index 2.html") from accidental copies
+* [2-9].html
+* 1[0-9].html

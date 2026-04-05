@@ -4,5 +4,7 @@ date: '2022-07-15'
 ---
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
+knitr::opts_chunk$set(echo = FALSE)
 ```
+
+Work-related data analysis and teaching resources will be listed here. For now, see the [RPubs collection](https://rpubs.com/andrewmrose) for published notebooks and examples.

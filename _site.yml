@@ -1,7 +1,8 @@
 name: "andrewmrose"
 title: "Andrew M Rose"
 description: |
-  My Website
+  Mathematics and physics educator at Holland College (PEI). Course resources, data projects, and community links.
+base_url: https://andrewmrose.github.io
 output_dir: "docs"
 navbar:
   right:

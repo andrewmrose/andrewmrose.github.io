@@ -6,13 +6,11 @@ title: "About Me"
 knitr::opts_chunk$set(echo = FALSE)
 ```
 ## Contact
-| | |
-|--- | --- | 
-|**Email**:|amrose (at) hollandcollege (dot) com|
-|**Address**: |Waterfront Campus, 98 Water Street, Summerside, PE|
-|**Office**:|227 WFC|
-| |308 PWC|
-|**Phone**:|902-888-6748|
+
+- **Email:** amrose (at) hollandcollege (dot) com  
+- **Phone:** [902-888-6748](tel:+19028886748)  
+- **Address:** Waterfront Campus, 98 Water Street, Summerside, PE  
+- **Office:** 227 (WFC); 308 (PWC)
 
 
 
@@ -21,7 +19,7 @@ I'm originally from a small town in Newfoundland, called [Harbour Grace](https:/
 
 ```{r}
 paths <- c("images/gm1.jpeg","images/gm2.jpeg","images/table1.jpeg","images/pei1.jpeg", "images/pei2.jpeg", "images/Bo1.jpeg")
-caps <- c("Trail leading to the base of Gros Morne Mountatin, Gros Morne National Park, Newfoundland", "View from the way down Gros Morne Mountatin, Gros Morne National Park, Newfoundland", "View from the top of the Tablelands, Gros Morne National Park, Newfoundland", "Scenery between Cape Tryon Lighthouse and New London Lighthouse, Prince Edward Island","Scenery between Cape Tryon Lighthouse and New London Lighthouse, Prince Edward Island", "One of my dogs enjoying a doggy sundae, Charlottetown, Prince Edward Island")
+caps <- c("Trail leading to the base of Gros Morne Mountain, Gros Morne National Park, Newfoundland", "View from the way down Gros Morne Mountain, Gros Morne National Park, Newfoundland", "View from the top of the Tablelands, Gros Morne National Park, Newfoundland", "Scenery between Cape Tryon Lighthouse and New London Lighthouse, Prince Edward Island", "Scenery between Cape Tryon Lighthouse and New London Lighthouse, Prince Edward Island", "One of my dogs enjoying a doggy sundae, Charlottetown, Prince Edward Island")
 pixture::pixgallery(paths, caption = caps)
 ```
 
