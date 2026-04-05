@@ -7,7 +7,8 @@
 #   ./publish.sh --install-deps     Install R packages for THIS Rscript, then exit
 #   ./publish.sh --install-deps --push   Install packages, then full publish flow
 #
-# Requires: git, R (see --install-deps). Make executable: chmod +x publish.sh
+# Requires: git, R (see --install-deps). Pushing needs a GitHub PAT or SSH (not your account password).
+# Make executable: chmod +x publish.sh
 
 set -euo pipefail
 
@@ -109,7 +110,17 @@ if $DO_PUSH; then
     echo "==> Committing rendered site and other local changes"
     git commit -m "Rebuild site $(date -u +%Y-%m-%dT%H:%MZ)"
   fi
-  git push origin "$BRANCH"
+  if ! git push origin "$BRANCH"; then
+    echo "" >&2
+    echo "Push failed: GitHub does not accept your account password for git over HTTPS." >&2
+    echo "  • Create a Personal Access Token and use it as the password:" >&2
+    echo "      https://github.com/settings/tokens   (enable the repo scope)" >&2
+    echo "  • At the username prompt use your GitHub username (e.g. andrewmrose), not your email." >&2
+    echo "  • Or use SSH instead of HTTPS:" >&2
+    echo "      git remote set-url origin git@github.com:andrewmrose/andrewmrose.github.io.git" >&2
+    echo "    Add an SSH key under GitHub → Settings → SSH and GPG keys, then: ssh -T git@github.com" >&2
+    exit 1
+  fi
   echo "==> Done."
 else
   echo "==> Render finished. To commit and push: ./publish.sh --push"
