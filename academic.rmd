@@ -6,9 +6,29 @@ date: '2026-04-06'
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE)
 ```
+##MSc Thesis – Mathematics
 
-- Rose, Andrew M. [Constructing static black hole-soliton spacetimes.](https://memorial.scholaris.ca/server/api/core/bitstreams/c26254e0-d6cc-4d12-8f3d-30f5ba3f4671/content) Masters Thesis. Memorial University of Newfoundland, 2019. 
-- Rose, Andrew M. [Adaptive Mesh Methods and a Schwarz Algorithm Implementation of a Smoothed Mesh Generating Function](content/1775427083527_Thesis_ARose.pdf) Honours Thesis. Memorial University of Newfoundland, 2015.
+Title: Constructing Static Black Hole‑Soliton Spacetimes
+Supervisor: Dr. Hari Kunduri
+Year: 2019
+
+Abstract:
+This work constructs new static solutions of five‑dimensional vacuum general relativity describing asymptotically flat black hole‑soliton spacetimes. Using Weyl solutions, explicit metrics are built and studied. The thesis then generalizes to non‑vanishing Maxwell fields, obtaining static, electrically charged black hole‑soliton spacetimes. A solution‑generating technique involving boosts and dualities is employed.
+
+[Link](https://memorial.scholaris.ca/server/api/core/bitstreams/c26254e0-d6cc-4d12-8f3d-30f5ba3f4671/content)
+
+
+
+##BSc (Honours) Thesis – Applied Mathematics
+
+Title: Adaptive Mesh Methods and a Schwarz Algorithm Implementation of a Smoothed Mesh Generating Function
+Supervisor: Dr. Ronald Haynes
+Year: 2015
+
+Abstract:
+Employing an adaptive mesh for solving PDEs improves accuracy in regions of complex behaviour. This thesis implements a classic Schwarz algorithm for a monitor function, studies convergence and accuracy, and extends to domain decomposition for parallelization. Numerical simulations demonstrate successful application of smoothed mesh techniques.
+
+[Link](content/1775427083527_Thesis_ARose.pdf)
 
 
 ```{r echo=FALSE}
