@@ -8,3 +8,15 @@ knitr::opts_chunk$set(echo = FALSE)
 ```
 
 Work-related data analysis and teaching resources will be listed here. For now, see the [RPubs collection](https://rpubs.com/andrewmrose) for published notebooks and examples.
+
+
+```{r echo=FALSE}
+htmltools::tags$p(
+  paste0(
+    "Last updated ",
+    format(Sys.time(), "%d %B %Y, %H:%M", tz = "America/Halifax"),
+    " (Atlantic)."
+  ),
+  style = "font-size:0.75rem;color:#6c757d;text-align:center;margin-top:2.5rem;margin-bottom:0;"
+)
+```
