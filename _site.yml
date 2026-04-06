@@ -14,11 +14,14 @@ navbar:
       href: teaching.html
     - text: "Projects"
       href: projects.html
+    - text: "Project Pages"
       menu:
-           - text: "Professional"
-             href: professional.html
-           - text: "Personal"
-             href: personal.html
+        - text: "Projects Overview"
+          href: projects.html
+        - text: "Professional"
+          href: professional.html
+        - text: "Personal"
+          href: personal.html
     - text: "Resources"
       href: resources.html
       
