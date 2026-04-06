@@ -7,5 +7,5 @@ date: '2026-04-06'
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
-- [BSc]((content/1775427083527_Thesis_ARose.pdf)) — notebooks and experiments  
-- [MSc](https://memorial.scholaris.ca/server/api/core/bitstreams/c26254e0-d6cc-4d12-8f3d-30f5ba3f4671/content) — interactive summary 
+- [BSc](content/1775427083527_Thesis_ARose.pdf) — Honours Thesis  
+- [MSc](https://memorial.scholaris.ca/server/api/core/bitstreams/c26254e0-d6cc-4d12-8f3d-30f5ba3f4671/content) — Master's Thesis 
