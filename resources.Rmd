@@ -4,14 +4,6 @@ title: "Resources"
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE)
-htmltools::tags$p(
-  paste0(
-    "Last updated ",
-    format(Sys.time(), "%d %B %Y, %H:%M", tz = "America/Halifax"),
-    " (Atlantic)."
-  ),
-  style = "font-size:0.75rem;color:#6c757d;text-align:center;margin-top:2.5rem;margin-bottom:0;"
-)
 ```
 
 Links are grouped for quicker scanning. All open in the same tab unless your browser is configured otherwise.
@@ -62,3 +54,14 @@ Links are grouped for quicker scanning. All open in the same tab unless your bro
 [LibreText - Math](https://math.libretexts.org/Bookshelves)  
 [LibreText - Stats](https://stats.libretexts.org/Bookshelves)  
 [LibreText - Physics](https://phys.libretexts.org/Bookshelves)  
+
+```{r echo=FALSE}
+htmltools::tags$p(
+  paste0(
+    "Last updated ",
+    format(Sys.time(), "%d %B %Y, %H:%M", tz = "America/Halifax"),
+    " (Atlantic)."
+  ),
+  style = "font-size:0.75rem;color:#6c757d;text-align:center;margin-top:2.5rem;margin-bottom:0;"
+)
+```
