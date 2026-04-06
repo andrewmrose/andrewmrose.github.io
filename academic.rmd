@@ -5,7 +5,7 @@ title: "Academic Publications"
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE)
 ```
-### MSc Thesis – Mathematics
+### MSc (Mathematics) Thesis
 
 Title: Constructing Static Black Hole‑Soliton Spacetimes
 Supervisor: Dr. Hari Kunduri
@@ -18,7 +18,7 @@ This work constructs new static solutions of five‑dimensional vacuum general r
 
 
 
-### BSc (Honours) Thesis – Applied Mathematics
+### BSc (Applied Mathematics and Physics Honours) Thesis
 
 Title: Adaptive Mesh Methods and a Schwarz Algorithm Implementation of a Smoothed Mesh Generating Function
 Supervisor: Dr. Ronald Haynes
