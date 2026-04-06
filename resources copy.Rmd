@@ -4,24 +4,9 @@ title: "Resources"
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE)
-# Get last Git commit date (from push) if available
-last_update <- tryCatch({
-  sys_out <- system("git log -1 --format=%cd --date=local", intern = TRUE)
-  if (length(sys_out) == 0) "" else sys_out
-}, error = function(e) "")
-if (last_update == "") {
-  last_update <- format(Sys.time(), "%Y-%m-%d %H:%M:%S")
-}
 ```
 
-Page last updated: r last_update
-Links are checked periodically. If you find a broken link, please let me know.
-
-Below are organizations and tools I’ve found helpful while living on PEI. They focus on housing, food, health, education, and community support. All external links open in a new tab.
-
-Community
-
-Housing & Shelter
+Links are grouped for quicker scanning. All open in the same tab unless your browser is configured otherwise.
 
 ## Community
 [Pride PEI](https://www.pridepei.ca/)  
