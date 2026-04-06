@@ -14,15 +14,15 @@ navbar:
       href: teaching.html
     - text: "Projects"
       href: projects.html
-    - text: "Project Pages"
       menu:
-        - text: "Projects Overview"
-          href: projects.html
-        - text: "Professional"
-          href: professional.html
         - text: "Personal"
           href: personal.html
+        - text: "Professional"
+          href: professional.html
     - text: "Resources"
       href: resources.html
       
-output: distill::distill_article
+output:
+  distill::distill_article:
+    includes:
+      in_header: _includes/navbar-projects-hover.html

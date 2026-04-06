@@ -590,6 +590,47 @@ font-style: normal;
 
           <!--/radix_placeholder_navigation_in_header-->
           <!--radix_placeholder_site_in_header-->
+          <style>
+
+@media (hover: hover) and (pointer: fine) {
+.distill-site-nav .dropdown:hover > .dropdown-menu,
+.distill-site-nav .dropdown:focus-within > .dropdown-menu {
+display: block;
+margin-top: 0;
+}
+}
+</style>
+
+          <script>
+          // Desktop behavior:
+          // - Hover opens the Projects dropdown (CSS above)
+          // - Clicking "Projects" navigates to projects.html instead of only toggling
+          // Mobile/touch keeps default tap-to-open dropdown behavior.
+          document.addEventListener("DOMContentLoaded", function () {
+            var desktopPointer = window.matchMedia("(hover: hover) and (pointer: fine)");
+            var links = document.querySelectorAll(
+              ".distill-site-nav .dropdown > a.dropdown-toggle[href]"
+            );
+
+            links.forEach(function (link) {
+              var href = link.getAttribute("href");
+              if (!href || href === "#") return;
+
+              link.addEventListener(
+                "click",
+                function (e) {
+                  if (!desktopPointer.matches) return;
+                  if (e.metaKey || e.ctrlKey || e.shiftKey || e.altKey) return;
+                  e.preventDefault();
+                  e.stopPropagation();
+                  window.location.assign(href);
+                },
+                true
+              );
+            });
+          });
+          </script>
+
           <!--/radix_placeholder_site_in_header-->
           
           <style type="text/css">
@@ -627,17 +668,15 @@ document.addEventListener('DOMContentLoaded', function(e) {
           </a>
           <a href="about.html">About</a>
           <a href="teaching.html">Teaching</a>
-          <a href="projects.html">Projects</a>
           <div class="nav-dropdown">
           <button class="nav-dropbtn">
-          Project Pages
+          Projects
            
           <span class="down-arrow">▾</span>
           </button>
           <div class="nav-dropdown-content">
-          <a href="projects.html">Projects Overview</a>
-          <a href="professional.html">Professional</a>
           <a href="personal.html">Personal</a>
+          <a href="professional.html">Professional</a>
           </div>
           </div>
           <a href="resources.html">Resources</a>
@@ -730,7 +769,7 @@ document.addEventListener('DOMContentLoaded', function(e) {
             be data based or otherwise. Please feel free to contact me
             regarding any errors to the website, or with any questions
             for the published projects!</p>
-            <p style="font-size:0.75rem;color:#6c757d;text-align:center;margin-top:2.5rem;margin-bottom:0;">Last updated 06 April 2026, 09:18 (Atlantic).</p>
+            <p style="font-size:0.75rem;color:#6c757d;text-align:center;margin-top:2.5rem;margin-bottom:0;">Last updated 06 April 2026, 09:23 (Atlantic).</p>
             </div>
           </div>
         </div>
@@ -805,7 +844,7 @@ document.addEventListener('DOMContentLoaded', function(e) {
               projects which may be data based or otherwise. Please feel
               free to contact me regarding any errors to the website, or
               with any questions for the published projects!</p>
-              <p style="font-size:0.75rem;color:#6c757d;text-align:center;margin-top:2.5rem;margin-bottom:0;">Last updated 06 April 2026, 09:18 (Atlantic).</p>
+              <p style="font-size:0.75rem;color:#6c757d;text-align:center;margin-top:2.5rem;margin-bottom:0;">Last updated 06 April 2026, 09:23 (Atlantic).</p>
               </div>
             </div>
         </div>

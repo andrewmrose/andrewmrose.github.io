@@ -1,0 +1,40 @@
+<style>
+/* Desktop: open dropdowns on hover/focus for quicker navigation */
+@media (hover: hover) and (pointer: fine) {
+  .distill-site-nav .dropdown:hover > .dropdown-menu,
+  .distill-site-nav .dropdown:focus-within > .dropdown-menu {
+    display: block;
+    margin-top: 0;
+  }
+}
+</style>
+
+<script>
+// Desktop behavior:
+// - Hover opens the Projects dropdown (CSS above)
+// - Clicking "Projects" navigates to projects.html instead of only toggling
+// Mobile/touch keeps default tap-to-open dropdown behavior.
+document.addEventListener("DOMContentLoaded", function () {
+  var desktopPointer = window.matchMedia("(hover: hover) and (pointer: fine)");
+  var links = document.querySelectorAll(
+    ".distill-site-nav .dropdown > a.dropdown-toggle[href]"
+  );
+
+  links.forEach(function (link) {
+    var href = link.getAttribute("href");
+    if (!href || href === "#") return;
+
+    link.addEventListener(
+      "click",
+      function (e) {
+        if (!desktopPointer.matches) return;
+        if (e.metaKey || e.ctrlKey || e.shiftKey || e.altKey) return;
+        e.preventDefault();
+        e.stopPropagation();
+        window.location.assign(href);
+      },
+      true
+    );
+  });
+});
+</script>

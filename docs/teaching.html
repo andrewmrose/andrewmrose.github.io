@@ -2107,6 +2107,47 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   <script src="site_libs/webcomponents-2.0.0/webcomponents.js"></script>
   <script src="site_libs/distill-2.2.21/template.v2.js"></script>
   <!--radix_placeholder_site_in_header-->
+  <style>
+  /* Desktop: open dropdowns on hover/focus for quicker navigation */
+  @media (hover: hover) and (pointer: fine) {
+    .distill-site-nav .dropdown:hover > .dropdown-menu,
+    .distill-site-nav .dropdown:focus-within > .dropdown-menu {
+      display: block;
+      margin-top: 0;
+    }
+  }
+  </style>
+
+  <script>
+  // Desktop behavior:
+  // - Hover opens the Projects dropdown (CSS above)
+  // - Clicking "Projects" navigates to projects.html instead of only toggling
+  // Mobile/touch keeps default tap-to-open dropdown behavior.
+  document.addEventListener("DOMContentLoaded", function () {
+    var desktopPointer = window.matchMedia("(hover: hover) and (pointer: fine)");
+    var links = document.querySelectorAll(
+      ".distill-site-nav .dropdown > a.dropdown-toggle[href]"
+    );
+
+    links.forEach(function (link) {
+      var href = link.getAttribute("href");
+      if (!href || href === "#") return;
+
+      link.addEventListener(
+        "click",
+        function (e) {
+          if (!desktopPointer.matches) return;
+          if (e.metaKey || e.ctrlKey || e.shiftKey || e.altKey) return;
+          e.preventDefault();
+          e.stopPropagation();
+          window.location.assign(href);
+        },
+        true
+      );
+    });
+  });
+  </script>
+
   <!--/radix_placeholder_site_in_header-->
 
 
@@ -2133,17 +2174,15 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 </a>
 <a href="about.html">About</a>
 <a href="teaching.html">Teaching</a>
-<a href="projects.html">Projects</a>
 <div class="nav-dropdown">
 <button class="nav-dropbtn">
-Project Pages
+Projects
  
 <span class="down-arrow">&#x25BE;</span>
 </button>
 <div class="nav-dropdown-content">
-<a href="projects.html">Projects Overview</a>
-<a href="professional.html">Professional</a>
 <a href="personal.html">Personal</a>
+<a href="professional.html">Professional</a>
 </div>
 </div>
 <a href="resources.html">Resources</a>
