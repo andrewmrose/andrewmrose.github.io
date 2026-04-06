@@ -2111,39 +2111,41 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   <script src="site_libs/distill-2.2.21/template.v2.js"></script>
   <!--radix_placeholder_site_in_header-->
   <style>
-  /* Desktop: open dropdowns on hover/focus for quicker navigation */
+  /* Distill nav uses .nav-dropdown + .nav-dropdown-content */
   @media (hover: hover) and (pointer: fine) {
-    .distill-site-nav .dropdown:hover > .dropdown-menu,
-    .distill-site-nav .dropdown:focus-within > .dropdown-menu {
+    .distill-site-nav .nav-dropdown:hover .nav-dropdown-content,
+    .distill-site-nav .nav-dropdown:focus-within .nav-dropdown-content {
       display: block;
-      margin-top: 0;
     }
   }
   </style>
 
   <script>
-  // Desktop behavior:
-  // - Hover opens the Projects dropdown (CSS above)
-  // - Clicking "Projects" navigates to projects.html instead of only toggling
-  // Mobile/touch keeps default tap-to-open dropdown behavior.
+  // Desktop behavior for Distill:
+  // - Hover opens dropdown
+  // - Clicking "Projects" navigates to projects.html
+  // Mobile/touch keeps default tap-to-open behavior.
   document.addEventListener("DOMContentLoaded", function () {
     var desktopPointer = window.matchMedia("(hover: hover) and (pointer: fine)");
-    var links = document.querySelectorAll(
-      ".distill-site-nav .dropdown > a.dropdown-toggle[href]"
-    );
+    var dropdowns = document.querySelectorAll(".distill-site-nav .nav-dropdown");
 
-    links.forEach(function (link) {
-      var href = link.getAttribute("href");
-      if (!href || href === "#") return;
+    dropdowns.forEach(function (dropdown) {
+      var button = dropdown.querySelector(".nav-dropbtn");
+      var menu = dropdown.querySelector(".nav-dropdown-content");
+      if (!button || !menu) return;
 
-      link.addEventListener(
+      var label = button.textContent.replace("▾", "").trim().toLowerCase();
+      if (label !== "projects") return;
+
+      button.addEventListener(
         "click",
         function (e) {
           if (!desktopPointer.matches) return;
           if (e.metaKey || e.ctrlKey || e.shiftKey || e.altKey) return;
           e.preventDefault();
           e.stopPropagation();
-          window.location.assign(href);
+          e.stopImmediatePropagation();
+          window.location.assign("projects.html");
         },
         true
       );
