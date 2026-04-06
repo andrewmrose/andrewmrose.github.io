@@ -25,7 +25,7 @@ caps <- c("Trail leading to the base of Gros Morne Mountain, Gros Morne National
 pixture::pixgallery(paths, caption = caps)
 ```
 
-In my spare time I enjoy spending time outside. This includes relaxing beach trips or day long hiking expeditions. Growing up in Newfoundland gives one ample opportunity to explore nature and I'm lucky to continue doing so on beautiful Prince Edward Island. I live in Charlottetown with my wife and our five pets (2 dogs and 4 cats).
+In my spare time I enjoy spending time outside. This includes relaxing beach trips or day long hiking expeditions. Growing up in Newfoundland gives one ample opportunity to explore nature and I'm lucky to continue doing so on beautiful Prince Edward Island. I live in Charlottetown with my wife and our six pets (2 dogs and 4 cats).
 
 
 
