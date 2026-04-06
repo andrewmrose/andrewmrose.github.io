@@ -7,9 +7,14 @@ knitr::opts_chunk$set(echo = FALSE)
 ```
 ### MSc (Mathematics) Thesis
 
-Title: Constructing Static Black Hole‑Soliton Spacetimes
-Supervisor: Dr. Hari Kunduri
-Year: 2019
+Title: 
+Constructing Static Black Hole‑Soliton Spacetimes
+
+Supervisor:
+Dr. Hari Kunduri
+
+Year:
+2019
 
 Abstract:
 This work constructs new static solutions of five‑dimensional vacuum general relativity describing asymptotically flat black hole‑soliton spacetimes. Using Weyl solutions, explicit metrics are built and studied. The thesis then generalizes to non‑vanishing Maxwell fields, obtaining static, electrically charged black hole‑soliton spacetimes. A solution‑generating technique involving boosts and dualities is employed.
@@ -21,7 +26,9 @@ This work constructs new static solutions of five‑dimensional vacuum general r
 ### BSc (Applied Mathematics and Physics Honours) Thesis
 
 Title: Adaptive Mesh Methods and a Schwarz Algorithm Implementation of a Smoothed Mesh Generating Function
+
 Supervisor: Dr. Ronald Haynes
+
 Year: 2015
 
 Abstract:
