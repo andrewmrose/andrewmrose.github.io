@@ -8,7 +8,7 @@ knitr::opts_chunk$set(echo = FALSE)
 ```
 
 - Rose, Andrew M. [Adaptive Mesh Methods and a Schwarz Algorithm Implementation of a Smoothed Mesh Generating Function](content/1775427083527_Thesis_ARose.pdf) Honours Thesis. Memorial University of Newfoundland, 2015.
-- Rose, Andrew M. [Constructing static black hole-soliton spacetimes.]](https://memorial.scholaris.ca/server/api/core/bitstreams/c26254e0-d6cc-4d12-8f3d-30f5ba3f4671/content) Masters Thesis. Memorial University of Newfoundland, 2019. 
+- Rose, Andrew M. [Constructing static black hole-soliton spacetimes.](https://memorial.scholaris.ca/server/api/core/bitstreams/c26254e0-d6cc-4d12-8f3d-30f5ba3f4671/content) Masters Thesis. Memorial University of Newfoundland, 2019. 
 
 ```{r echo=FALSE}
 htmltools::tags$p(
