@@ -9,34 +9,57 @@ knitr::opts_chunk$set(echo = FALSE)
 Links are grouped for quicker scanning. All open in the same tab unless your browser is configured otherwise.
 
 ## Community
-[Pride PEI](https://www.pridepei.ca/)  
-[Mental Health Services](https://www.princeedwardisland.ca/en/information/health-pei/mental-health-services)  
-[Native Council of PEI](https://ncpei.com/)  
+
+### Housing & Shelter
 [PEI Fight for Affordable Housing](https://peifah.ca/)  
-[PEI Transgender Network](https://www.peitn.com/home)  
-[Immigrant & Refugee Services Association PEI](https://www.irsapei.ca/en/home)  
-[PEERS Alliance](https://www.peersalliance.ca/)  
-[PEI Food Exchange](https://www.foodexchangepei.com/)  
-[PEI Rape and Sexual Assault Centre](https://www.peirsac.org/what-we-do)  
-[PEI Family Violence Prevention Services](https://www.fvps.ca/)  
 [Anderson House](https://www.fvps.ca/anderson-house/)  
 [Chief Mary Bernard Memorial Women's Shelter](https://cmbmws.ca/get-help/)  
 [Blooming House](https://bloominghouse.ca/)  
-[BIPOC USHR PEI](https://www.bipocushr.org/)  
-[PEI Human Rights Commission](https://www.peihumanrights.ca/)  
-[Upper Room Hospitality Ministry](https://www.urhm.org/)  
-[PEI Community Fridge](https://linktr.ee/peicommunityfridge)  
-[Meals on Wheels PEI](https://vrcpei.org/meals-on-wheels/)  
 [Deacon House](https://pei.bridgethegapp.ca/adult/service-directory/deacon-house/)  
 [Emergency Housing Services](https://pei.bridgethegapp.ca/service-directory/service_directory_tag/housing-emergency-shelter/)  
+
+### Food Assistance
+[PEI Food Exchange](https://www.foodexchangepei.com/)  
+[PEI Community Fridge](https://linktr.ee/peicommunityfridge)  
+[Meals on Wheels PEI](https://vrcpei.org/meals-on-wheels/)  
+[Upper Room Hospitality Ministry](https://www.urhm.org/)  
+
+### Health & Mental Health
+[Mental Health Services](https://www.princeedwardisland.ca/en/information/health-pei/mental-health-services)  
+[PEI Rape and Sexual Assault Centre](https://www.peirsac.org/what-we-do)  
+[PEI Family Violence Prevention Services](https://www.fvps.ca/)  
+[PEI Crisis Line](https://www.peiers.ca/) *(1‑800‑218‑2885)*  
+
+### LGBTQ+ & Identity
+[Pride PEI](https://www.pridepei.ca/)  
+[PEI Transgender Network](https://www.peitn.com/home)  
+[PEERS Alliance](https://www.peersalliance.ca/)  
+
+### Indigenous & Immigrant Services
+[Native Council of PEI](https://ncpei.com/)  
+[Immigrant & Refugee Services Association PEI](https://www.irsapei.ca/en/home)  
+[BIPOC USHR PEI](https://www.bipocushr.org/)  
+
+### Legal & Human Rights
+[PEI Human Rights Commission](https://www.peihumanrights.ca/)  
+
+### Transportation
 [Transit PEI](https://transitpei.ca/)  
 [T3 Transit](https://www.t3transit.ca/)  
+
+### Libraries & Municipal
 [City of Charlottetown](https://www.charlottetown.ca/)  
 [City of Summerside](https://www.summerside.ca/)  
 [Charlottetown Library](https://www.princeedwardisland.ca/en/point-interest/charlottetown-library-learning-centre-0)  
 [Summerside Library](https://www.princeedwardisland.ca/en/point-interest/summerside-rotary-library)  
+[PEI Public Libraries (main portal)](https://www.princeedwardisland.ca/en/topic/public-libraries)  
+
+### General Help
+[211 PEI](https://pei.211.ca/) – central helpline for social services  
 
 ## Academic and career
+
+### Holland College
 [Academic Support - Holland College](https://www.hollandcollege.com/admissions/academic-support.html)  
 [Office of Retention, Part-Time Study & Career Services - Holland College](https://www.hollandcollege.com/campus-life/office-of-retention-part-time-study-and-career-services.html)  
 [Residence Services - Holland College](https://www.hollandcollege.com/campus-life/living-in-residence.html)  
@@ -49,11 +72,37 @@ Links are grouped for quicker scanning. All open in the same tab unless your bro
 [Health Clinics - Holland College](https://www.hollandcollege.com/campus-life/health-clinics.html)  
 [Health Services - Holland College](https://www.hollandcollege.com/campus-life/health-services.html)  
 [Counselling Services - Holland College](https://www.hollandcollege.com/campus-life/counselling-services.html)  
+
+### Free textbooks & online learning
 [OpenStax](https://openstax.org/)  
 [American Institute of Mathematics - Open Textbook Initiative](https://aimath.org/textbooks/approved-textbooks/)  
 [LibreText - Math](https://math.libretexts.org/Bookshelves)  
 [LibreText - Stats](https://stats.libretexts.org/Bookshelves)  
 [LibreText - Physics](https://phys.libretexts.org/Bookshelves)  
+[BCcampus OpenEd](https://open.bccampus.ca/)  
+[MIT OpenCourseWare](https://ocw.mit.edu/)  
+[Khan Academy](https://www.khanacademy.org/)  
+
+### Career & job search
+[Job Bank PEI](https://www.jobbank.gc.ca/home)  
+[WorkPEI](https://www.workpei.ca/)  
+[Indeed PEI](https://ca.indeed.com/l-Charlottetown,-PE-jobs)  
+
+### Study skills
+[Purdue OWL](https://owl.purdue.edu/)  
+[Zotero](https://www.zotero.org/)  
+
+```{js, echo=FALSE}
+// Open all external links in a new tab
+document.addEventListener('DOMContentLoaded', function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (links[i].hostname !== window.location.hostname) {
+      links[i].setAttribute('target', '_blank');
+      links[i].setAttribute('rel', 'noopener noreferrer');
+    }
+  }
+});
 
 ```{r echo=FALSE}
 htmltools::tags$p(
