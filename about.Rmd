@@ -27,3 +27,15 @@ pixture::pixgallery(paths, caption = caps)
 
 In my spare time I enjoy spending time outside. This includes relaxing beach trips or day long hiking expeditions. Growing up in Newfoundland gives one ample opportunity to explore nature and I'm lucky to continue doing so on beautiful Prince Edward Island. I live in Charlottetown with my wife and our five pets (2 dogs and 4 cats).
 
+
+
+```{r echo=FALSE}
+htmltools::tags$p(
+  paste0(
+    "Last updated ",
+    format(Sys.time(), "%d %B %Y, %H:%M", tz = "America/Halifax"),
+    " (Atlantic)."
+  ),
+  style = "font-size:0.75rem;color:#6c757d;text-align:center;margin-top:2.5rem;margin-bottom:0;"
+)
+```
