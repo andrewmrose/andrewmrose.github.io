@@ -19,6 +19,8 @@ navbar:
           href: personal.html
         - text: "Professional"
           href: professional.html
+        - text: "Academic"
+          href: academic.html
     - text: "Resources"
       href: resources.html
       

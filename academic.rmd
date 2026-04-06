@@ -1,0 +1,11 @@
+---
+title: "Academic Publications"
+date: '2026-04-06'
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+- [RPubs collection](https://rpubs.com/andrewmrose/) — notebooks and experiments  
+- [PEI municipal election data, 2014–2022](content/ElectionPlots.html) — interactive summary 
