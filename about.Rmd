@@ -13,9 +13,9 @@ knitr::opts_chunk$set(echo = FALSE)
 **Office:** Room 57, Waterfront Campus, 98 Water Street, Summerside, PE  
 
 **Professional Profiles:**
-- [LinkedIn](https://www.linkedin.com/in/andrewmrose)
+- [LinkedIn](https://www.linkedin.com/in/andrewmichaelrose)
 - [ORCID](https://orcid.org/your-orcid-here)
-- [ResearchGate](https://www.researchgate.net/profile/Andrew-Rose)
+- [ResearchGate](https://www.researchgate.net/profile/Andrew-Rose-2)
 
 ## Background
 
