@@ -6,7 +6,7 @@ title: "Resources"
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
-Links are grouped for quicker scanning. All open in the same tab unless your browser is configured otherwise.
+Links are grouped for quicker scanning. External links open in a new tab for your convenience.
 
 ## Community
 
@@ -64,7 +64,7 @@ Links are grouped for quicker scanning. All open in the same tab unless your bro
 [Office of Retention, Part-Time Study & Career Services - Holland College](https://www.hollandcollege.com/campus-life/office-of-retention-part-time-study-and-career-services.html)  
 [Residence Services - Holland College](https://www.hollandcollege.com/campus-life/living-in-residence.html)  
 [Off Campus Housing - Holland College](https://www.hollandcollege.com/campus-life/living-off-campus.html)  
-[Academic Calendar - Holland College](https://www.hollandcollege.com/admissions/2022-2023-calendar.html)  
+[Academic Calendar - Holland College](https://www.hollandcollege.com/admissions/current-academic-calendar.html)  
 [Library Services - Holland College](https://hollandcollege.libguides.com/c.php?g=715197)  
 [Money Matters - Holland College](https://www.hollandcollege.com/admissions/money-matters/)  
 [Financial Aid - Holland College](https://www.hollandcollege.com/admissions/money-matters/financial-aid.html)  
@@ -103,6 +103,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
   }
 });
+```
 
 ```{r echo=FALSE}
 htmltools::tags$p(

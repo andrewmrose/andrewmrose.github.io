@@ -6,6 +6,7 @@
 #   ./publish.sh --push             Same, then commit + push
 #   ./publish.sh --install-deps     Install R packages for THIS Rscript, then exit
 #   ./publish.sh --install-deps --push   Install packages, then full publish flow
+#   ./publish.sh --dry-run          Preview changes without committing
 #
 # Requires: git, R (see --install-deps). Pushing needs a GitHub PAT or SSH (not your account password).
 # Make executable: chmod +x publish.sh
@@ -17,20 +18,25 @@ cd "$ROOT"
 
 DO_PUSH=false
 DO_INSTALL_DEPS=false
+DO_DRY_RUN=false
 for arg in "$@"; do
   case "$arg" in
     --push) DO_PUSH=true ;;
     --install-deps) DO_INSTALL_DEPS=true ;;
+    --dry-run) DO_DRY_RUN=true ;;
     *)
       echo "Unknown option: $arg" >&2
-      echo "Usage: $0 [--install-deps] [--push]" >&2
+      echo "Usage: $0 [--install-deps] [--push] [--dry-run]" >&2
       exit 1
       ;;
   esac
 done
 
+# Check for required tools
+command -v git >/dev/null 2>&1 || { echo "Error: git is not installed." >&2; exit 1; }
+
 find_rscript() {
-  # Prefer CRAN’s .pkg R: it supports CRAN macOS binaries. Homebrew R often only builds from source.
+  # Prefer CRAN's .pkg R: it supports CRAN macOS binaries. Homebrew R often only builds from source.
   local r
   for r in /Library/Frameworks/R.framework/Resources/bin/Rscript \
            /opt/homebrew/bin/Rscript \
@@ -72,7 +78,7 @@ require_rmarkdown() {
   echo "Run (prefers macOS binaries, see scripts/install-r-deps.R):" >&2
   echo "  $0 --install-deps" >&2
   echo "" >&2
-  echo "If installs fail with 'cstring' / 'cstdlib' file not found, fix Xcode CLT or use CRAN’s .pkg R:" >&2
+  echo "If installs fail with 'cstring' / 'cstdlib' file not found, fix Xcode CLT or use CRAN's .pkg R:" >&2
   echo "  https://cran.r-project.org/bin/macosx/" >&2
   exit 1
 }
@@ -102,13 +108,27 @@ git pull --rebase --autostash origin "$BRANCH"
 echo "==> rmarkdown::render_site()"
 "$RSCRIPT" -e "setwd('$ROOT'); rmarkdown::render_site(encoding = 'UTF-8')"
 
+# Verify render succeeded
+if [[ ! -d "$ROOT/docs" ]] || [[ -z "$(find "$ROOT/docs" -type f -name '*.html' 2>/dev/null)" ]]; then
+  echo "Error: render failed — no HTML files found in docs/." >&2
+  exit 1
+fi
+
+if $DO_DRY_RUN; then
+  echo "==> --dry-run: Showing changes that would be committed"
+  git diff --stat
+  git diff --cached --stat
+  exit 0
+fi
+
 if $DO_PUSH; then
   git add -A
   if git diff --staged --quiet; then
     echo "==> No file changes after render; pushing to sync remote (if any)"
   else
+    TIMESTAMP="$(date -u +%Y-%m-%dT%H:%MZ)"
     echo "==> Committing rendered site and other local changes"
-    git commit -m "Rebuild site $(date -u +%Y-%m-%dT%H:%MZ)"
+    git commit -m "Rebuild site $TIMESTAMP"
   fi
   if ! git push origin "$BRANCH"; then
     echo "" >&2
