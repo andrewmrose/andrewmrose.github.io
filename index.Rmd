@@ -8,6 +8,9 @@ links:
   - label: '[`r fontawesome::fa("linkedin")`](https://www.linkedin.com/in/andrewmichaelrose)'
   - label: '[`r fontawesome::fa("at")`](mailto:amrose@hollandcollege.com)'  
   - label: '[`r fontawesome::fa("book-open")`](https://rpubs.com/andrewmrose)'
+  - label: '[`r fontawesome::fa("google")`](https://scholar.google.com/citations?user=Q2xMh4kAAAAJ&hl=en)'
+  - label: '[`r fontawesome::fa("orcid")`](https://orcid.org/0009-0007-7694-9692)'
+  - label: '[`r fontawesome::fa("researchgate")`](https://www.researchgate.net/profile/Andrew-Rose-2)' 
 output:
   postcards::trestles
 site: distill::distill_website
