@@ -105,6 +105,6 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 ```
 
-```{r echo=FALSE}
+```{r echo=FALSE, results='asis'}
 source('_timestamp.R')
 ```
