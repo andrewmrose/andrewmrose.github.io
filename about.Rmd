@@ -6,23 +6,53 @@ title: "About Me"
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
-## Contact
+## Contact & Connect
 
-- **Email:** amrose (at) hollandcollege (dot) com  
-- **Phone:** [902-888-6748](tel:+19028886748)  
-- **Address:** Waterfront Campus, 98 Water Street, Summerside, PE  
-- **Office:** 57 (WFC)
+**Email:** [amrose@hollandcollege.com](mailto:amrose@hollandcollege.com)  
+**Phone:** [902-888-6748](tel:+19028886748)  
+**Office:** Room 57, Waterfront Campus, 98 Water Street, Summerside, PE  
 
-## Biography
+**Professional Profiles:**
+- [LinkedIn](https://www.linkedin.com/in/andrewmrose)
+- [ORCID](https://orcid.org/your-orcid-here)
+- [ResearchGate](https://www.researchgate.net/profile/Andrew-Rose)
 
-I'm originally from a small town in Newfoundland, called [Harbour Grace](https://www.hrgrace.ca/). Growing up I loved math and science, so when I had the chance I decided to pursue those subjects in university. For my BSc (Joint Hons) in Applied Math and Physics, I completed research in numerical methods for adaptive mesh generation. This research was conducted under the supervision of Dr. Ronald Haynes. Next, I completed my MSc in Math under the supervision of Dr. Hari Kunduri. This research focused on theoretical black holes and their geometry. My BEd in Intermediate/Secondary Education was completed as I finished my MSc. This included a teaching internship at Prince of Wales Collegiate in St. John's, NL.
+## Background
 
-Since then, I've taught post‑secondary mathematics at the College of the North Atlantic, worked as a Health Information Specialist at Health PEI (statistical analysis and data visualization), and joined Holland College as a Learning Manager of Mathematics and Physics. I serve as a Faculty Representative on the college's Accessability and Inclusion Advisory Council, The City of Charlottetown's Affordable Housing Advisory Board, and as a trustee of the Public Schools Branch (PEI), where I chair the Finance & Audit Committee.
+I'm originally from [Harbour Grace, Newfoundland](https://www.hrgrace.ca/). My academic journey spans:
+
+- **BSc (Joint Hons) Applied Math & Physics** — Research in numerical methods for adaptive mesh generation under Dr. Ronald Haynes
+- **MSc Mathematics** — Theoretical research on black hole geometry under Dr. Hari Kunduri
+- **BEd Intermediate/Secondary Education** — Teaching internship at Prince of Wales Collegiate, St. John's
+
+My professional experience includes:
+- Post-secondary mathematics instructor at College of the North Atlantic (2019–2021)
+- Health Information Specialist at Health PEI (statistical analysis and data visualization)
+- Learning Manager of Mathematics and Physics at Holland College (2022–present)
+
+## Service & Community
+
+- Faculty Representative, Holland College Accessibility and Inclusion Advisory Council
+- Member, City of Charlottetown Affordable Housing Advisory Board
+- Trustee, Public Schools Branch (PEI) — Chair, Finance & Audit Committee
+
+## Personal
 
 ```{r}
 paths <- c("images/gm1.jpeg","images/gm2.jpeg","images/table1.jpeg","images/pei1.jpeg", "images/pei2.jpeg", "images/Bo1.jpeg")
-caps <- c("Trail leading to the base of Gros Morne Mountain, Gros Morne National Park, Newfoundland", "View from the way down Gros Morne Mountain, Gros Morne National Park, Newfoundland", "View from the top of the Tablelands, Gros Morne National Park, Newfoundland", "Scenery between Cape Tryon Lighthouse and New London Lighthouse, Prince Edward Island", "Scenery between Cape Tryon Lighthouse and New London Lighthouse, Prince Edward Island", "One of my dogs enjoying a doggy sundae, Charlottetown, Prince Edward Island")
+caps <- c("Trail to Gros Morne Mountain base, Gros Morne NP, NL", "View from Gros Morne descent, Gros Morne NP, NL", "View from the Tablelands summit, Gros Morne NP, NL", "Scenery: Cape Tryon to New London Lighthouses, PEI", "Coastal scenery between lighthouses, PEI", "One of my dogs enjoying a doggy sundae, Charlottetown, PEI")
 pixture::pixgallery(paths, caption = caps)
 ```
 
-In my spare time I enjoy spending time outside. This includes relaxing beach trips or day long hiking expeditions. Growing up in Newfoundland gives one ample opportunity to explore nature and I'm lucky to continue doing so on beautiful Prince Edward Island. I live in Charlottetown with my wife and our six pets (2 dogs and 4 cats).
+In my spare time, I enjoy outdoor activities — from relaxing beach trips to day-long hiking expeditions. Growing up in Newfoundland gave me ample opportunity to explore nature, a passion I continue on beautiful Prince Edward Island. I live in Charlottetown with my wife and our six pets (2 dogs and 4 cats).
+
+```{r echo=FALSE}
+htmltools::tags$p(
+  paste0(
+    "Last updated ",
+    format(Sys.time(), "%d %B %Y, %H:%M", tz = "America/Halifax"),
+    " (Atlantic)."
+  ),
+  style = "font-size:0.75rem;color:#6c757d;text-align:center;margin-top:2.5rem;margin-bottom:0;"
+)
+```
