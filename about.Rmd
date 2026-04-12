@@ -14,8 +14,10 @@ knitr::opts_chunk$set(echo = FALSE)
 
 **Professional Profiles:**
 - [LinkedIn](https://www.linkedin.com/in/andrewmichaelrose)
-- [ORCID](https://orcid.org/your-orcid-here)
+- [Google Scholar](https://scholar.google.com/citations?user=Q2xMh4kAAAAJ&hl=en)
+- [ORCID](https://orcid.org/0009-0007-7694-9692)
 - [ResearchGate](https://www.researchgate.net/profile/Andrew-Rose-2)
+
 
 ## Background
 
