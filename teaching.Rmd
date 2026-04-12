@@ -5,6 +5,7 @@ title: "Teaching History"
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE)
 ```
+
 ## Holland College 
 ### 2022-2026
 Physics 1000 - Physics  
@@ -20,8 +21,6 @@ Math 1170 - Technical Mathematics II
 Math 1104 - Algebra and Trigonometry  
 Math 1120 - Finite Math I  
 Math 1121 - Finite Math II  
-Math 1130 - Calculus I  
-Math 1131 - Calculus II
 
 ```{r echo=FALSE}
 htmltools::tags$p(

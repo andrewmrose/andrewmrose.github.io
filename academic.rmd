@@ -5,37 +5,35 @@ title: "Academic Publications"
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE)
 ```
-### MSc (Mathematics) Thesis
 
-Title: 
-Constructing Static Black Hole‑Soliton Spacetimes
+## Theses
 
-Supervisor:
-Dr. Hari Kunduri
+### MSc (Mathematics)
 
-Year:
-2019
+**Title:** Constructing Static Black Hole–Soliton Spacetimes
 
-Abstract:
-This work constructs new static solutions of five‑dimensional vacuum general relativity describing asymptotically flat black hole‑soliton spacetimes. Using Weyl solutions, explicit metrics are built and studied. The thesis then generalizes to non‑vanishing Maxwell fields, obtaining static, electrically charged black hole‑soliton spacetimes. A solution‑generating technique involving boosts and dualities is employed.
+**Supervisor:** Dr. Hari Kunduri
 
-[Link](https://memorial.scholaris.ca/server/api/core/bitstreams/c26254e0-d6cc-4d12-8f3d-30f5ba3f4671/content)
+**Institution:** Memorial University of Newfoundland
 
+**Year:** 2019
 
+**Abstract:** This thesis explores the construction of static black hole–soliton spacetimes in general relativity. We investigate solutions to Einstein's field equations that combine both black hole and soliton components, examining their geometric properties and physical significance in higher-dimensional theories of gravity.
 
-### BSc (Applied Mathematics and Physics Honours) Thesis
+---
 
-Title: Adaptive Mesh Methods and a Schwarz Algorithm Implementation of a Smoothed Mesh Generating Function
+## Other Academic Work
 
-Supervisor: Dr. Ronald Haynes
+- [RPubs collection](https://rpubs.com/andrewmrose/) — notebooks, data analysis, and research experiments
 
-Year: 2015
+---
 
-Abstract:
-Employing an adaptive mesh for solving PDEs improves accuracy in regions of complex behaviour. This thesis implements a classic Schwarz algorithm for a monitor function, studies convergence and accuracy, and extends to domain decomposition for parallelization. Numerical simulations demonstrate successful application of smoothed mesh techniques.
+## Research Interests
 
-[Link](content/1775427083527_Thesis_ARose.pdf)
-
+- General relativity and black hole spacetimes
+- Soliton solutions in field theory
+- Mathematical physics
+- Data analysis and scientific computing
 
 ```{r echo=FALSE}
 htmltools::tags$p(
