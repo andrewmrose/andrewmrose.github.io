@@ -315,24 +315,13 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 ```
 
-```{r timestamp, echo=FALSE}
-# Try to get last Git commit date
-last_update <- tryCatch({
-  sys_out <- system("git log -1 --format=%cd --date=unix", intern = TRUE)
-  if (length(sys_out) == 0) "" else as.numeric(sys_out[1])
-}, error = function(e) NULL)
-
-if (!is.null(last_update) && last_update != "") {
-  # Convert Unix timestamp to POSIXct
-  last_update_ct <- as.POSIXct(last_update, origin = "1970-01-01", tz = "America/Halifax")
-  formatted_date <- format(last_update_ct, "%d %B %Y, %H:%M")
-} else {
-  # Fallback to current time
-  formatted_date <- format(Sys.time(), "%d %B %Y, %H:%M", tz = "America/Halifax")
-}
-
-tags$p(
-  paste0("Last updated ", formatted_date, " (Atlantic)."),
-  style = "font-size:0.75rem;color:#6c757d;text-align:center;margin-top:3rem;"
+```{r echo=FALSE}
+htmltools::tags$p(
+  paste0(
+    "Last updated ",
+    format(Sys.time(), "%d %B %Y, %H:%M", tz = "America/Halifax"),
+    " (Atlantic)."
+  ),
+  style = "font-size:0.75rem;color:#6c757d;text-align:center;margin-top:2.5rem;margin-bottom:0;"
 )
 ```

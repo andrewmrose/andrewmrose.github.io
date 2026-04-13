@@ -75,9 +75,13 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 ```
 
-```{r}
-tags$p(
-  paste0("Last updated ", formatted_date, " (Atlantic)."),
-  style = "font-size:0.75rem;color:#6c757d;text-align:center;margin-top:2rem;"
+```{r echo=FALSE}
+htmltools::tags$p(
+  paste0(
+    "Last updated ",
+    format(Sys.time(), "%d %B %Y, %H:%M", tz = "America/Halifax"),
+    " (Atlantic)."
+  ),
+  style = "font-size:0.75rem;color:#6c757d;text-align:center;margin-top:2.5rem;margin-bottom:0;"
 )
 ```
