@@ -35,6 +35,7 @@ simple_entry <- function(title, org = NULL, date = NULL, note = NULL) {
   )
 }
 
+
 # Helper: education entry
 edu_entry <- function(degree, year, institution, thesis = NULL, supervisor = NULL) {
   tagList(
@@ -51,18 +52,27 @@ edu_entry <- function(degree, year, institution, thesis = NULL, supervisor = NUL
 divider <- function() div(class = "entry-divider")
 ```
 
-```{r contact-bar}
+```{r}
+tags$p(
+  tags$a(href = "content/AndrewRoseResume.pdf", 
+         class = "pdf-link",
+         "📄 Download PDF CV"),
+  style = "margin-top: 0.5rem; margin-bottom: 0.5rem; font-size: 0.9rem;"
+)
+```
+
+```{r contact-bar, echo=FALSE}
 div(class = "contact-bar",
   tags$a(href = "mailto:amrose@hollandcollege.com",
-    tags$span(class = "contact-item", "✉ amrose@hollandcollege.com")),
+    fontawesome::fa("envelope"), " amrose@hollandcollege.com"),
   tags$span(class = "contact-sep", "·"),
   tags$a(href = "tel:+19028886748",
-    tags$span(class = "contact-item", "☏ (902) 888-6748")),
+    fontawesome::fa("phone"), " (902) 888-6748"),
   tags$span(class = "contact-sep", "·"),
   tags$a(href = "https://www.andrewmrose.ca",
-    tags$span(class = "contact-item", "🌐 andrewmrose.ca")),
+    fontawesome::fa("globe"), " andrewmrose.ca"),
   tags$span(class = "contact-sep", "·"),
-  tags$span(class = "contact-item", "Charlottetown, PE")
+  fontawesome::fa("map-marker-alt"), " Charlottetown, PE"
 )
 ```
 
@@ -242,12 +252,14 @@ tagList(
 
 ## Publications
 
-```{r publications}
+```{r publications, echo=FALSE}
 div(class = "publication",
   p(
-    tags$strong("Alam, J., Walsh, R., Hossain, A., & Rose, A."),
+    tags$strong("Alam, J. M., Walsh, R. P., Alamgir Hossain, M., & Rose, A. M."),
     " (2014). A computational methodology for two-dimensional fluid flows. ",
-    tags$em("International Journal for Numerical Methods in Fluids.")
+    tags$em("International Journal for Numerical Methods in Fluids"), ", ",
+    "75(12), 835–859. ",
+    tags$a(href = "https://doi.org/10.1002/fld.3917", "doi:10.1002/fld.3917")
   )
 )
 ```
@@ -291,9 +303,36 @@ div(class = "skills-grid",
 )
 ```
 
-```{r timestamp}
+```{js, echo=FALSE}
+document.addEventListener('DOMContentLoaded', function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (links[i].hostname !== window.location.hostname && links[i].hostname !== '') {
+      links[i].setAttribute('target', '_blank');
+      links[i].setAttribute('rel', 'noopener noreferrer');
+    }
+  }
+});
+```
+
+```{r timestamp, echo=FALSE}
+# Try to get last Git commit date
+last_update <- tryCatch({
+  sys_out <- system("git log -1 --format=%cd --date=unix", intern = TRUE)
+  if (length(sys_out) == 0) "" else as.numeric(sys_out[1])
+}, error = function(e) NULL)
+
+if (!is.null(last_update) && last_update != "") {
+  # Convert Unix timestamp to POSIXct
+  last_update_ct <- as.POSIXct(last_update, origin = "1970-01-01", tz = "America/Halifax")
+  formatted_date <- format(last_update_ct, "%d %B %Y, %H:%M")
+} else {
+  # Fallback to current time
+  formatted_date <- format(Sys.time(), "%d %B %Y, %H:%M", tz = "America/Halifax")
+}
+
 tags$p(
-  paste0("Last updated ", format(Sys.time(), "%d %B %Y", tz = "America/Halifax"), "."),
+  paste0("Last updated ", formatted_date, " (Atlantic)."),
   style = "font-size:0.75rem;color:#6c757d;text-align:center;margin-top:3rem;"
 )
 ```
