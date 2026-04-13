@@ -1,12 +1,38 @@
 ---
 title: "Resources"
+site: distill::distill_website
+output:
+  distill::distill_article:
+    toc: true
+    toc_depth: 3
+    css: resources.css
 ---
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE)
+library(htmltools)
+
+# Get last Git commit date (from push) if available
+last_update <- tryCatch({
+  sys_out <- system("git log -1 --format=%cd --date=unix", intern = TRUE)
+  if (length(sys_out) == 0) "" else as.numeric(sys_out[1])
+}, error = function(e) NULL)
+
+if (!is.null(last_update) && last_update != "") {
+  last_update_ct <- as.POSIXct(last_update, origin = "1970-01-01", tz = "America/Halifax")
+  formatted_date <- format(last_update_ct, "%d %B %Y, %H:%M")
+} else {
+  formatted_date <- format(Sys.time(), "%d %B %Y, %H:%M", tz = "America/Halifax")
+}
 ```
 
-Links are grouped for quicker scanning. External links open in a new tab for your convenience.
+```{r}
+tags$p(
+  "Below are organisations and tools I’ve found helpful while living on PEI. ",
+  "They focus on housing, food, health, education, and community support. ",
+  "All external links open in a new tab."
+)
+```
 
 ## Community
 
