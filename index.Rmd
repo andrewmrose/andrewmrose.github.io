@@ -3,14 +3,14 @@ title: "Andrew M Rose"
 image: "images/meheadshot.jpeg"
 links:
   - label: '[`r fontawesome::fa("file")` **CV**](content/AndrewRoseResume.pdf)'
-  - label: '[`r fontawesome::fa("user-graduate")` **Holland College**](https://www.hollandcollege.com)'
-  - label: '[`r fontawesome::fa("github")`](https://github.com/andrewmrose)'
-  - label: '[`r fontawesome::fa("linkedin")`](https://www.linkedin.com/in/andrewmichaelrose)'
   - label: '[`r fontawesome::fa("at")`](mailto:amrose@hollandcollege.com)'  
-  - label: '[`r fontawesome::fa("book-open")`](https://rpubs.com/andrewmrose)'
+  - label: '[`r fontawesome::fa("user-graduate")` **Holland College**](https://www.hollandcollege.com)'
+  - label: '[`r fontawesome::fa("linkedin")`](https://www.linkedin.com/in/andrewmichaelrose)'
   - label: '[`r fontawesome::fa("google")`](https://scholar.google.com/citations?user=Q2xMh4kAAAAJ&hl=en)'
   - label: '[`r fontawesome::fa("orcid")`](https://orcid.org/0009-0007-7694-9692)'
   - label: '[`r fontawesome::fa("researchgate")`](https://www.researchgate.net/profile/Andrew-Rose-2)' 
+  - label: '[`r fontawesome::fa("github")`](https://github.com/andrewmrose)'
+  - label: '[`r fontawesome::fa("book-open")`](https://rpubs.com/andrewmrose)'
 output:
   postcards::trestles
 site: distill::distill_website
