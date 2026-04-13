@@ -1,5 +1,11 @@
 ---
 title: "Teaching History"
+site: distill::distill_website
+output:
+  distill::distill_article:
+    toc: true
+    toc_depth: 2
+    css: site.css
 ---
 
 ```{r setup, include=FALSE}

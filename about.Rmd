@@ -1,16 +1,37 @@
 ---
 title: "About Me"
+site: distill::distill_website
+output:
+  distill::distill_article:
+    toc: true
+    toc_depth: 2
+    css: site.css
 ---
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE)
+library(htmltools)
+
+# Get last Git commit date (from push) if available
+last_update <- tryCatch({
+  sys_out <- system("git log -1 --format=%cd --date=unix", intern = TRUE)
+  if (length(sys_out) == 0) "" else as.numeric(sys_out[1])
+}, error = function(e) NULL)
+
+if (!is.null(last_update) && last_update != "") {
+  last_update_ct <- as.POSIXct(last_update, origin = "1970-01-01", tz = "America/Halifax")
+  formatted_date <- format(last_update_ct, "%d %B %Y, %H:%M")
+} else {
+  formatted_date <- format(Sys.time(), "%d %B %Y, %H:%M", tz = "America/Halifax")
+}
 ```
 
 ## Contact & Connect
 
 **Email:** [amrose@hollandcollege.com](mailto:amrose@hollandcollege.com)  
 **Phone:** [902-888-6748](tel:+19028886748)  
-**Office:** Room 57, Waterfront Campus, 98 Water Street, Summerside, PE 
+**Address:** Waterfront Campus, 98 Water Street, Summerside, PE   
+**Office:** Room 57 
 
 
 ## Background
@@ -34,21 +55,29 @@ My professional experience includes:
 
 ## Personal
 
-```{r}
-paths <- c("images/gm1.jpeg","images/gm2.jpeg","images/table1.jpeg","images/pei1.jpeg", "images/pei2.jpeg", "images/Bo1.jpeg")
-caps <- c("Trail to Gros Morne Mountain base, Gros Morne NP, NL", "View from Gros Morne descent, Gros Morne NP, NL", "View from the Tablelands summit, Gros Morne NP, NL", "Scenery: Cape Tryon to New London Lighthouses, PEI", "Coastal scenery between lighthouses, PEI", "One of my dogs enjoying a doggy sundae, Charlottetown, PEI")
-pixture::pixgallery(paths, caption = caps)
-```
-
 In my spare time, I enjoy outdoor activities — from relaxing beach trips to day-long hiking expeditions. Growing up in Newfoundland gave me ample opportunity to explore nature, a passion I continue on beautiful Prince Edward Island. I live in Charlottetown with my wife and our six pets (2 dogs and 4 cats).
 
-```{r echo=FALSE}
-htmltools::tags$p(
-  paste0(
-    "Last updated ",
-    format(Sys.time(), "%d %B %Y, %H:%M", tz = "America/Halifax"),
-    " (Atlantic)."
-  ),
-  style = "font-size:0.75rem;color:#6c757d;text-align:center;margin-top:2.5rem;margin-bottom:0;"
+```{r}
+paths <- c("images/gm1.jpeg","images/gm2.jpeg","images/table1.jpeg","images/pei1.jpeg", "images/pei2.jpeg", "images/Bo1.jpeg")
+caps <- c("Trail leading to the base of Gros Morne Mountain, Gros Morne National Park, Newfoundland", "View from the way down Gros Morne Mountain, Gros Morne National Park, Newfoundland", "View from the top of the Tablelands, Gros Morne National Park, Newfoundland", "Scenery between Cape Tryon Lighthouse and New London Lighthouse, Prince Edward Island", "Scenery between Cape Tryon Lighthouse and New London Lighthouse, Prince Edward Island", "One of my dogs enjoying a doggy sundae, Charlottetown, Prince Edward Island")
+pixture::pixgallery(paths, caption = caps)
+```
+```{js}
+// Open all external links in a new tab
+document.addEventListener('DOMContentLoaded', function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (links[i].hostname !== window.location.hostname && links[i].hostname !== '') {
+      links[i].setAttribute('target', '_blank');
+      links[i].setAttribute('rel', 'noopener noreferrer');
+    }
+  }
+});
+```
+
+```{r}
+tags$p(
+  paste0("Last updated ", formatted_date, " (Atlantic)."),
+  style = "font-size:0.75rem;color:#6c757d;text-align:center;margin-top:2rem;"
 )
 ```
