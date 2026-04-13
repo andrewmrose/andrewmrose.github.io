@@ -1,0 +1,299 @@
+---
+title: "Résumé"
+output:
+  distill::distill_article:
+    toc: true
+    toc_depth: 2
+    css: resume.css
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+library(htmltools)
+
+# Helper: section entry with right-aligned date
+entry <- function(title, org, date, details = NULL) {
+  tagList(
+    div(class = "entry-header",
+      span(class = "entry-title", title),
+      span(class = "entry-date", date)
+    ),
+    div(class = "entry-org", org),
+    if (!is.null(details)) tags$ul(lapply(details, tags$li))
+  )
+}
+
+# Helper: simple line entry (for awards, certs, governance)
+simple_entry <- function(title, org = NULL, date = NULL, note = NULL) {
+  tagList(
+    div(class = "entry-header",
+      span(class = "entry-title", title),
+      if (!is.null(date)) span(class = "entry-date", date)
+    ),
+    if (!is.null(org))  div(class = "entry-org", org),
+    if (!is.null(note)) div(class = "entry-note", note)
+  )
+}
+
+# Helper: education entry
+edu_entry <- function(degree, year, institution, thesis = NULL, supervisor = NULL) {
+  tagList(
+    div(class = "entry-header",
+      span(class = "entry-title", degree),
+      span(class = "entry-date", year)
+    ),
+    div(class = "entry-org", institution),
+    if (!is.null(thesis))     div(class = "entry-note", tags$em("Thesis: "), thesis),
+    if (!is.null(supervisor)) div(class = "entry-note", tags$em("Supervisor: "), supervisor)
+  )
+}
+
+divider <- function() div(class = "entry-divider")
+```
+
+```{r contact-bar}
+div(class = "contact-bar",
+  tags$a(href = "mailto:amrose@hollandcollege.com",
+    tags$span(class = "contact-item", "✉ amrose@hollandcollege.com")),
+  tags$span(class = "contact-sep", "·"),
+  tags$a(href = "tel:+19028886748",
+    tags$span(class = "contact-item", "☏ (902) 888-6748")),
+  tags$span(class = "contact-sep", "·"),
+  tags$a(href = "https://www.andrewmrose.ca",
+    tags$span(class = "contact-item", "🌐 andrewmrose.ca")),
+  tags$span(class = "contact-sep", "·"),
+  tags$span(class = "contact-item", "Charlottetown, PE")
+)
+```
+
+## Education
+
+```{r education}
+tagList(
+  edu_entry(
+    degree     = "Master of Science — Mathematics",
+    year       = "2019",
+    institution = "Faculty of Science & School of Graduate Studies, Memorial University, St. John's, NL",
+    thesis     = "Constructing Static Black-Soliton Spacetimes",
+    supervisor = "Dr. Hari Kunduri"
+  ),
+  divider(),
+  edu_entry(
+    degree     = "Bachelor of Education — Intermediate/Secondary (Mathematics & Science)",
+    year       = "2019",
+    institution = "Faculty of Education, Memorial University, St. John's, NL"
+  ),
+  divider(),
+  edu_entry(
+    degree     = "Bachelor of Science, Joint Honours — Applied Mathematics and Physics",
+    year       = "2015",
+    institution = "Faculty of Science, Memorial University, St. John's, NL",
+    thesis     = "Adaptive Mesh Methods and a Schwarz Algorithm Implementation of a Smoothed Mesh Generating Function",
+    supervisor = "Dr. Ronald Haynes"
+  )
+)
+```
+
+## Employment
+
+```{r employment}
+tagList(
+  entry(
+    title  = "Instructor & Learning Manager",
+    org    = "Holland College — Summerside & Charlottetown, PE",
+    date   = "Aug 2022 – Present",
+    details = list(
+      "Design and deliver post-secondary mathematics and physics courses within Industrial Technology and Trades programs, serving students across energy systems, electrical, and construction technology disciplines",
+      "Lead curriculum development and course redesign initiatives, aligning technical content with industry standards and program learning outcomes",
+      "Collaborate in a cross-functional instructional team to support student academic success, transitions, and professional preparation",
+      "Serve as Faculty Representative on the Culture and Inclusion Advisory Committee (2025–present)"
+    )
+  ),
+  divider(),
+  entry(
+    title  = "Health Information Specialist",
+    org    = "Health PEI — Charlottetown, PE",
+    date   = "Aug 2021 – Aug 2022",
+    details = list(
+      "Developed backend data pipelines and analytics tools in R and SQL to support provincial health system operations and reporting",
+      "Built and maintained databases and dashboards used in day-to-day health information workflows, using RStudio and DBeaver"
+    )
+  ),
+  divider(),
+  entry(
+    title  = "Instructor",
+    org    = "College of the North Atlantic — Carbonear, NL",
+    date   = "Aug 2019 – Aug 2021",
+    details = list(
+      "Sole instructor for Algebra and Trigonometry, Finite Mathematics, and Calculus within the College-University Transfer Program",
+      "Designed all course assessments, managed course administration, and delivered instruction to cohorts of first-year students",
+      "Selected by the department to develop online teaching modules and digital learning resources during the institutional shift to remote instruction",
+      "Served on the Campus Scholarship Committee as Faculty Representative (2019–2021)"
+    )
+  )
+)
+```
+
+## Governance & Civic Engagement
+
+```{r governance}
+tagList(
+  entry(
+    title  = "Trustee & Chair, Finance and Audit Committee",
+    org    = "Public Schools Branch — Stratford, PE",
+    date   = "2025 – Present",
+    details = list(
+      "Elected trustee with governance oversight of a public school authority serving approximately 20,000 students, 4,000 staff, and a $240M annual budget",
+      "Chair the Finance and Audit Committee; lead quarterly financial reviews, audit planning, and financial reporting to the full board"
+    )
+  ),
+  divider(),
+  entry(
+    title  = "Member",
+    org    = "Affordable Housing Advisory Committee, City of Charlottetown — Charlottetown, PE",
+    date   = "2025 – Present",
+    details = list(
+      "Provide community and analytical perspective on municipal housing policy, affordability initiatives, and development planning"
+    )
+  ),
+  divider(),
+  simple_entry(
+    title = "Faculty Representative, Culture and Inclusion Advisory Committee",
+    org   = "Holland College — Charlottetown, PE",
+    date  = "2025 – Present"
+  ),
+  divider(),
+  simple_entry(
+    title = "Faculty Representative, Campus Scholarship Committee",
+    org   = "College of the North Atlantic — Carbonear, NL",
+    date  = "2019 – 2021"
+  )
+)
+```
+
+## Professional Development
+
+```{r profdev}
+tagList(
+  entry(
+    title  = "Leadership Institute for Future Leaders in Management",
+    org    = "Colleges and Institutes Canada",
+    date   = "2025",
+    details = list(
+      "National leadership development program focused on strategic thinking, governance, and management practice in Canada's college and institute sector"
+    )
+  ),
+  divider(),
+  entry(
+    title  = "Teaching Skills Enhancement Program (TSEP)",
+    org    = "Memorial University",
+    date   = "2018",
+    details = list(
+      "Prepared and delivered lectures for an introductory undergraduate mathematics course under faculty supervision; participated in pedagogy seminars across disciplines"
+    )
+  ),
+  divider(),
+  entry(
+    title  = "Graduate Program in Mathematics and Statistics Teaching",
+    org    = "Memorial University",
+    date   = "2018",
+    details = list(
+      "Delivered lectures in Linear Algebra; attended seminars on post-secondary teaching practice"
+    )
+  ),
+  divider(),
+  div(class = "cert-group",
+    p(class = "cert-label", "Teaching Certifications"),
+    tags$ul(
+      tags$li("Certificate in Adult Education (Equivalent), Prince Edward Island", tags$span(class = "entry-date", "2024")),
+      tags$li("Post-Secondary Instructors Certificate, Newfoundland and Labrador", tags$span(class = "entry-date", "2021")),
+      tags$li("Secondary Teaching Certificate VII, Newfoundland and Labrador",     tags$span(class = "entry-date", "2019"))
+    )
+  )
+)
+```
+
+## Awards & Honours
+
+```{r awards}
+tagList(
+  simple_entry("NSERC Canadian Graduate Scholarship — Master's (CGS-M), $17,500",
+               "Memorial University, St. John's, NL", "2017"),
+  divider(),
+  simple_entry("Dean's Excellence Award, $5,000",
+               "School of Graduate Studies, Memorial University, St. John's, NL", "2017"),
+  divider(),
+  simple_entry("Recognition of Excellence",
+               "School of Graduate Studies, Memorial University, St. John's, NL", "2018"),
+  divider(),
+  simple_entry("Queen Elizabeth II Graduate Scholarship in Science and Technology, $15,000 — declined",
+               "University of Waterloo, Waterloo, ON", "2015"),
+  divider(),
+  simple_entry("Science Undergraduate Research Award (SURA) — awarded 2013, 2014, 2015",
+               "Memorial University, St. John's, NL", "2013–2015"),
+  divider(),
+  simple_entry("Dean's List",
+               "Memorial University, St. John's, NL", "2013–2015"),
+  divider(),
+  simple_entry("The Harvey and Doris Murcell Scholarship, $1,000",
+               "Memorial University, St. John's, NL", "2014")
+)
+```
+
+## Publications
+
+```{r publications}
+div(class = "publication",
+  p(
+    tags$strong("Alam, J., Walsh, R., Hossain, A., & Rose, A."),
+    " (2014). A computational methodology for two-dimensional fluid flows. ",
+    tags$em("International Journal for Numerical Methods in Fluids.")
+  )
+)
+```
+
+## Presentations
+
+```{r presentations}
+tagList(
+  simple_entry(
+    title = '"Constructing Static Black Hole-Soliton Spacetimes"',
+    org   = "M.Sc. Thesis Presentation, Memorial University, St. John's, NL",
+    date  = "Oct 2019"
+  ),
+  divider(),
+  simple_entry(
+    title = '"Adaptive Mesh Methods and a Smoothed Schwarz Algorithm Implementation"',
+    org   = "Summer Undergraduate Research Forum, Memorial University, St. John's, NL",
+    date  = "Sept 2014"
+  ),
+  divider(),
+  simple_entry(
+    title = '"Numerical Simulation of Two-Dimensional Fluid Flow"',
+    org   = "Summer Undergraduate Research Forum, Memorial University, St. John's, NL",
+    date  = "Sept 2013"
+  )
+)
+```
+
+## Skills
+
+```{r skills}
+div(class = "skills-grid",
+  div(class = "skill-block",
+    p(class = "skill-label", "Programming"),
+    p("C, C++, FORTRAN, Java, JavaScript, LaTeX, Mathematica, MATLAB, Python, R, SQL")
+  ),
+  div(class = "skill-block",
+    p(class = "skill-label", "Operating Systems"),
+    p("Linux, macOS, Windows")
+  )
+)
+```
+
+```{r timestamp}
+tags$p(
+  paste0("Last updated ", format(Sys.time(), "%d %B %Y", tz = "America/Halifax"), "."),
+  style = "font-size:0.75rem;color:#6c757d;text-align:center;margin-top:3rem;"
+)
+```

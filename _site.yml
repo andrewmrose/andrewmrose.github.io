@@ -10,6 +10,8 @@ navbar:
       href: index.html
     - text: "About"
       href: about.html
+    - text: "Résumé"
+      href: resume.html
     - text: "Teaching"
       href: teaching.html
     - text: "Projects"
