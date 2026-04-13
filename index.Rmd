@@ -26,7 +26,7 @@ knitr::opts_chunk$set(echo = FALSE)
 
 ```
 
-## Mathematics & Physics Educator | Data Analyst
+## Hello | Bonjour | Kwe'
 
 I'm a Learning Manager at [Holland College](https://www.hollandcollege.com) (Summerside, PEI), teaching mathematics and physics to post-secondary students. I hold an MSc in Mathematics, a BEd in Secondary Education, and a joint honours BSc in Applied Math and Physics.
 
